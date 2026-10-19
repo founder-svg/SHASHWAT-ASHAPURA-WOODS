@@ -1,0 +1,26 @@
+# Dependencies
+node_modules/
+dist/
+
+# Large Raw Video Footage (>100MB exceeds GitHub push limit)
+IMG_9748.MOV
+
+# Environment & Sensitive Credentials
+.env
+.env.*
+*.pem
+*.key
+*.cert
+*.pfx
+
+# Temporary & Build files
+temp*
+*.log
+*.tmp
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDE & Editor settings
+.vscode/
+.idea/
