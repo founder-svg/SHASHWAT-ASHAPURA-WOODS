@@ -2793,18 +2793,23 @@ textarea.form-control {
 
 .contact-brand-logo-frame {
   flex-shrink: 0;
-  width: 175px;
+  width: 260px;
   border-radius: var(--radius-sm);
   background: #FFFDF8;
-  padding: 6px;
-  border: 1.5px solid rgba(198, 146, 85, 0.35);
-  box-shadow: 0 6px 18px rgba(113, 45, 18, 0.1);
+  padding: 8px;
+  border: 1.5px solid rgba(198, 146, 85, 0.45);
+  box-shadow: 0 8px 24px rgba(113, 45, 18, 0.12);
   transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 
 .contact-brand-hallmark-card:hover .contact-brand-logo-frame {
-  transform: scale(1.03);
-  box-shadow: 0 10px 24px rgba(113, 45, 18, 0.18);
+  transform: scale(1.02);
+  box-shadow: 0 12px 28px rgba(113, 45, 18, 0.18);
+  border-color: var(--color-wood-brown);
 }
 
 .contact-brand-hallmark-logo {
@@ -2812,6 +2817,32 @@ textarea.form-control {
   height: auto;
   display: block;
   border-radius: 4px;
+}
+
+.logo-frame-footer-badge {
+  width: 100%;
+  background: rgba(113, 45, 18, 0.05);
+  border: 1px solid rgba(198, 146, 85, 0.35);
+  border-radius: 4px;
+  padding: 6px 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.logo-frame-cert {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #712D12;
+}
+
+.logo-frame-hub {
+  font-size: 0.65rem;
+  color: #8C3A19;
+  font-weight: 600;
 }
 
 .contact-brand-identity-text {
@@ -3153,7 +3184,7 @@ textarea.form-control {
   }
   .contact-brand-logo-frame {
     width: 100%;
-    max-width: 200px;
+    max-width: 280px;
     margin: 0 auto;
   }
   .contact-brand-pillars-grid {
