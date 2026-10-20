@@ -2146,75 +2146,152 @@ ol {
 
 .app-cards-scroll-wrap {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
-  max-width: 1100px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  max-width: 1240px;
   margin: 3.5rem auto 0 auto;
-}
-
-@media (max-width: 768px) {
-  .app-cards-scroll-wrap {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
 }
 
 .app-card {
   position: relative;
-  height: 420px;
+  height: 440px;
   border-radius: var(--radius-lg);
   overflow: hidden;
-  box-shadow: var(--shadow-md);
-  transition: all var(--transition-smooth);
+  background: #11141a;
+  border: 1px solid rgba(212, 160, 23, 0.18);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.45);
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1), 
+              border-color 0.4s ease;
+  isolation: isolate;
+}
+
+.app-card::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.12),
+    rgba(212, 160, 23, 0.18),
+    transparent
+  );
+  transform: skewX(-22deg);
+  transition: left 0.8s ease;
+  pointer-events: none;
+  z-index: 2;
 }
 
 .app-card:hover {
   transform: translateY(-8px);
-  box-shadow: var(--shadow-xl);
+  border-color: rgba(212, 160, 23, 0.55);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.65), 
+              0 0 25px rgba(212, 160, 23, 0.22);
+}
+
+.app-card:hover::after {
+  left: 140%;
 }
 
 .app-card-img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.6s ease;
+  transition: transform 0.7s cubic-bezier(0.19, 1, 0.22, 1);
+  filter: contrast(1.05) brightness(0.95);
 }
 
 .app-card:hover .app-card-img {
-  transform: scale(1.08);
+  transform: scale(1.09);
+  filter: contrast(1.08) brightness(1);
 }
 
 .app-card-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(10, 11, 14, 0.96) 0%, rgba(18, 20, 25, 0.55) 60%, transparent 100%);
+  background: linear-gradient(
+    to top,
+    rgba(8, 10, 13, 0.98) 0%,
+    rgba(14, 18, 24, 0.75) 45%,
+    rgba(18, 22, 28, 0.25) 75%,
+    transparent 100%
+  );
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 1.8rem;
+  padding: 1.6rem;
   color: var(--color-white);
+  z-index: 1;
+}
+
+.app-card-tags {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .app-card-number {
   font-family: var(--font-display);
-  font-size: 0.8rem;
+  font-size: 0.72rem;
+  font-weight: 700;
   color: var(--color-amber-gold);
-  letter-spacing: 0.15em;
-  margin-bottom: 0.4rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.app-badge-pill {
+  font-family: var(--font-sans);
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(212, 160, 23, 0.35);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .app-card-title {
   font-family: var(--font-serif);
-  font-size: 1.5rem;
+  font-size: 1.38rem;
   font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  margin-bottom: 0.45rem;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .app-card-desc {
-  font-size: 0.78rem;
-  color: rgba(245, 240, 231, 0.85);
-  line-height: 1.5;
+  font-size: 0.8rem;
+  color: rgba(245, 240, 231, 0.88);
+  line-height: 1.45;
+  margin-bottom: 0.85rem;
+}
+
+.app-spec-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: rgba(212, 160, 23, 0.95);
+  letter-spacing: 0.02em;
+}
+
+.app-spec-bar span:nth-child(2) {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* ==========================================================================
@@ -5472,4 +5549,280 @@ textarea.form-control {
   .story-nav-btns {
     justify-content: space-between;
   }
+}
+
+/* ==========================================================================
+   SITE-WIDE CINEMATIC ANIMATIONS & LUXURY VISUAL ENHANCEMENTS (V3.0)
+   ========================================================================== */
+
+/* 1. Global Keyframes */
+@keyframes goldGlowPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(212, 160, 23, 0.45);
+  }
+  70% {
+    box-shadow: 0 0 0 12px rgba(212, 160, 23, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(212, 160, 23, 0);
+  }
+}
+
+@keyframes ambientFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes ambientFloatSlow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+}
+
+@keyframes liveStatusPing {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(46, 204, 113, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(46, 204, 113, 0);
+  }
+}
+
+@keyframes sheenSweep {
+  0% {
+    left: -120%;
+  }
+  100% {
+    left: 150%;
+  }
+}
+
+@keyframes gradientShiftSmooth {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 2. Floating Badges and Ambient Micro-Movements */
+.intro-floating-badge,
+.hero-floating-stat,
+.trust-seal-badge,
+.corporate-hallmark-badge {
+  animation: ambientFloat 4.5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.intro-floating-badge:hover,
+.trust-seal-badge:hover {
+  animation-play-state: paused;
+}
+
+/* 3. Live Stock & Operations Radar Pings */
+.live-status-dot,
+.stock-status-ping,
+.inventory-live-badge::before {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: #2ecc71;
+  border-radius: 50%;
+  margin-right: 6px;
+  animation: liveStatusPing 2s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+}
+
+/* 4. Interactive Card Sheen Shimmer & Luxury Elevation */
+.product-card,
+.species-card,
+.why-card,
+.cert-card,
+.quality-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              box-shadow 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+              border-color 0.35s ease;
+}
+
+.product-card::before,
+.species-card::before,
+.why-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -130%;
+  width: 70%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    rgba(212, 160, 23, 0.14),
+    transparent
+  );
+  transform: skewX(-20deg);
+  transition: left 0.75s cubic-bezier(0.19, 1, 0.22, 1);
+  pointer-events: none;
+  z-index: 3;
+}
+
+.product-card:hover::before,
+.species-card:hover::before,
+.why-card:hover::before {
+  left: 140%;
+}
+
+.product-card:hover,
+.species-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -12px rgba(10, 11, 14, 0.18),
+              0 0 20px rgba(212, 160, 23, 0.12);
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 36px -10px rgba(10, 11, 14, 0.14),
+              0 0 16px rgba(198, 146, 85, 0.12);
+  border-color: rgba(198, 146, 85, 0.45);
+}
+
+/* 5. Image Clarity & Dynamic Hover Scaling */
+.product-card-img,
+.species-card-img,
+.gallery-img,
+.intro-visual-img {
+  transition: transform 0.65s cubic-bezier(0.19, 1, 0.22, 1),
+              filter 0.5s ease;
+  filter: contrast(1.02) brightness(0.98);
+}
+
+.product-card:hover .product-card-img,
+.species-card:hover .species-card-img,
+.gallery-item:hover .gallery-img {
+  transform: scale(1.07);
+  filter: contrast(1.06) brightness(1.02);
+}
+
+/* 6. High-Conversion CTA Buttons with Gold Glow Pulse */
+.btn-primary,
+.cta-button,
+.hero-cta-btn {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              box-shadow 0.3s ease,
+              background-color 0.3s ease;
+}
+
+.btn-primary:hover,
+.cta-button:hover,
+.hero-cta-btn:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 12px 24px -6px rgba(212, 160, 23, 0.45),
+              0 0 15px rgba(212, 160, 23, 0.25);
+}
+
+.btn-primary:active,
+.cta-button:active {
+  transform: translateY(0) scale(0.99);
+}
+
+/* Shimmer overlay for primary buttons */
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: left 0.6s ease;
+}
+
+.btn-primary:hover::after {
+  left: 150%;
+}
+
+/* 7. Section Header Accent Glow Lines */
+.section-label {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--color-amber-gold);
+}
+
+.section-label::before {
+  content: '';
+  display: inline-block;
+  width: 14px;
+  height: 2px;
+  background: var(--color-amber-gold);
+  border-radius: 1px;
+}
+
+/* 8. Quick Trigger Floating Nav Bars Glow */
+.quick-trigger-item {
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              box-shadow 0.3s ease;
+}
+
+.quick-trigger-item:hover {
+  transform: scale(1.12);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35),
+              0 0 16px rgba(212, 160, 23, 0.35);
+}
+
+/* 9. Video Cinema Container Subtle Stage Light Aura */
+.cinema-player-wrapper {
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.85),
+              0 0 40px rgba(212, 160, 23, 0.08);
+  border: 1px solid rgba(212, 160, 23, 0.2);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.cinema-player-wrapper:hover {
+  border-color: rgba(212, 160, 23, 0.4);
+  box-shadow: 0 30px 70px -15px rgba(0, 0, 0, 0.9),
+              0 0 50px rgba(212, 160, 23, 0.16);
+}
+
+/* 10. Smooth Scroll Reveal Readiness */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.7s cubic-bezier(0.165, 0.84, 0.44, 1),
+              transform 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
 }
