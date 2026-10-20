@@ -1326,14 +1326,14 @@ ol {
   right: -24px;
   background: var(--color-forest-primary);
   color: var(--color-white);
-  padding: 1.4rem 1.6rem;
+  padding: 1.35rem 1.6rem;
   border-radius: var(--radius-md);
-  box-shadow: var(--shadow-xl);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.45), 0 0 20px rgba(212, 160, 23, 0.15);
+  border: 1px solid rgba(212, 160, 23, 0.3);
   display: flex;
   align-items: flex-start;
   gap: 1.1rem;
-  max-width: 325px;
+  max-width: 350px;
   z-index: 6;
 }
 
