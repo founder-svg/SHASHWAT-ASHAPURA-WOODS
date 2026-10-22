@@ -186,7 +186,8 @@
 
       <!-- Slide 02: Client Image 2 - Column Timber Shuttering & Rebar -->
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image: url('assets/images/site-saw-column-formwork-dusk.jpg');"></div>
+        <div class="hero-slide-bg" style="background-image: url('assets/images/site-saw-column-formwork-dusk.jpg');">
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-particles"></div>
         <div class="container hero-content-wrap">
@@ -217,7 +218,8 @@
 
       <!-- Slide 03: Client Image 3 - Beam Timber Runners & Staging -->
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image: url('assets/images/site-saw-beam-slab-formwork.jpg');"></div>
+        <div class="hero-slide-bg" style="background-image: url('assets/images/site-saw-beam-slab-formwork.jpg');">
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-particles"></div>
         <div class="container hero-content-wrap">
@@ -403,7 +405,8 @@
 
       <!-- Slide 09: Generated 4 - Heavy Timber Column Clamps & Bracing -->
       <div class="hero-slide">
-        <div class="hero-slide-bg" style="background-image: url('assets/images/site-saw-column-concrete-pour.jpg');"></div>
+        <div class="hero-slide-bg" style="background-image: url('assets/images/site-saw-column-concrete-pour.jpg');">
+        </div>
         <div class="hero-overlay"></div>
         <div class="hero-particles"></div>
         <div class="container hero-content-wrap">
@@ -775,7 +778,7 @@
           <div class="intro-slider-track">
             <!-- Slide 1: Structure Slab Deck Laying with Pine Runners -->
             <div class="intro-slide active">
-              <img src="assets/images/site-structure-slab-deck-laying.jpg"
+              <img decoding="async" loading="lazy" src="assets/images/site-structure-slab-deck-laying.jpg"
                 alt="Carpenters Laying Red Film-Faced Shuttering Plywood on Pine Joists for Structure Slab Deck"
                 class="intro-image-main">
               <div class="intro-slide-caption">
@@ -786,7 +789,7 @@
 
             <!-- Slide 2: High-Rise Slab Formwork Deck with Engineers -->
             <div class="intro-slide">
-              <img src="assets/images/site-structure-slab-engineers-deck.jpg"
+              <img decoding="async" loading="lazy" src="assets/images/site-structure-slab-engineers-deck.jpg"
                 alt="High-Rise Elevated Structure Slab Formwork Deck with WudPlus Densified Plywood"
                 class="intro-image-main">
               <div class="intro-slide-caption">
@@ -797,7 +800,7 @@
 
             <!-- Slide 3: Commercial Slab Decking Pan-Pour -->
             <div class="intro-slide">
-              <img src="assets/images/site-red-film-face-formwork-04.jpg"
+              <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-04.jpg"
                 alt="Massive High-Rise Commercial Floor Slab Decking with Red Film-Faced Shuttering Plywood"
                 class="intro-image-main">
               <div class="intro-slide-caption">
@@ -808,7 +811,7 @@
 
             <!-- Slide 4: Slab Foundation & Beam Shuttering Bed -->
             <div class="intro-slide">
-              <img src="assets/images/site-saw-beam-slab-formwork.jpg"
+              <img decoding="async" loading="lazy" src="assets/images/site-saw-beam-slab-formwork.jpg"
                 alt="Reinforced Floor Slab Bed and Beam Shuttering Formwork with Pine Timber Walers"
                 class="intro-image-main">
               <div class="intro-slide-caption">
@@ -819,7 +822,7 @@
 
             <!-- Slide 5: Pine Timber Staging and Slab Props -->
             <div class="intro-slide">
-              <img src="assets/images/site-slab-prop-timber-joists.jpg"
+              <img decoding="async" loading="lazy" src="assets/images/site-slab-prop-timber-joists.jpg"
                 alt="Selected Pine Timber Runners, Joists, and Steel Props Staging Structure Slab"
                 class="intro-image-main">
               <div class="intro-slide-caption">
@@ -830,12 +833,14 @@
           </div>
 
           <!-- Slider Navigation Arrows -->
-          <button type="button" class="intro-slider-nav prev" id="introSliderPrev" aria-label="Previous Slide" onclick="window.sawPrevIntroSlide(event)">
+          <button type="button" class="intro-slider-nav prev" id="introSliderPrev" aria-label="Previous Slide"
+            onclick="window.sawPrevIntroSlide(event)">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="15 18 9 12 15 6" />
             </svg>
           </button>
-          <button type="button" class="intro-slider-nav next" id="introSliderNext" aria-label="Next Slide" onclick="window.sawNextIntroSlide(event)">
+          <button type="button" class="intro-slider-nav next" id="introSliderNext" aria-label="Next Slide"
+            onclick="window.sawNextIntroSlide(event)">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
               <polyline points="9 18 15 12 9 6" />
             </svg>
@@ -843,11 +848,16 @@
 
           <!-- Slider Dots -->
           <div class="intro-slider-dots" id="introSliderDots">
-            <button type="button" class="intro-dot active" data-slide="0" aria-label="Slide 1" onclick="window.sawGoToIntroSlide(0, event)"></button>
-            <button type="button" class="intro-dot" data-slide="1" aria-label="Slide 2" onclick="window.sawGoToIntroSlide(1, event)"></button>
-            <button type="button" class="intro-dot" data-slide="2" aria-label="Slide 3" onclick="window.sawGoToIntroSlide(2, event)"></button>
-            <button type="button" class="intro-dot" data-slide="3" aria-label="Slide 4" onclick="window.sawGoToIntroSlide(3, event)"></button>
-            <button type="button" class="intro-dot" data-slide="4" aria-label="Slide 5" onclick="window.sawGoToIntroSlide(4, event)"></button>
+            <button type="button" class="intro-dot active" data-slide="0" aria-label="Slide 1"
+              onclick="window.sawGoToIntroSlide(0, event)"></button>
+            <button type="button" class="intro-dot" data-slide="1" aria-label="Slide 2"
+              onclick="window.sawGoToIntroSlide(1, event)"></button>
+            <button type="button" class="intro-dot" data-slide="2" aria-label="Slide 3"
+              onclick="window.sawGoToIntroSlide(2, event)"></button>
+            <button type="button" class="intro-dot" data-slide="3" aria-label="Slide 4"
+              onclick="window.sawGoToIntroSlide(3, event)"></button>
+            <button type="button" class="intro-dot" data-slide="4" aria-label="Slide 5"
+              onclick="window.sawGoToIntroSlide(4, event)"></button>
           </div>
         </div>
 
@@ -861,7 +871,8 @@
           </div>
           <div class="intro-badge-content">
             <h4>Global Timber Importers &amp; Formwork Solutions</h4>
-            <p>Direct port importers of international pinewood logs and manufacturers of heavy-duty shuttering plywood, supplying major civil infrastructure, metros, and bridges across India.</p>
+            <p>Direct port importers of international pinewood logs and manufacturers of heavy-duty shuttering plywood,
+              supplying major civil infrastructure, metros, and bridges across India.</p>
           </div>
         </div>
       </div>
@@ -905,15 +916,16 @@
               </span>
               <span class="pillar-title">30+ Repetitive Pours</span>
             </div>
-            <p class="pillar-desc">High-quality shuttering plywood with 100% Phenol Formaldehyde (PF) resin guarantees mirror-smooth concrete finishes every pour.</p>
+            <p class="pillar-desc">High-quality shuttering plywood with 100% Phenol Formaldehyde (PF) resin guarantees
+              mirror-smooth concrete finishes every pour.</p>
           </div>
         </div>
 
         <!-- Original Client Brand Hallmark Showcase -->
         <div class="brand-hallmark-card">
           <div class="hallmark-plaque-thumb">
-            <img src="assets/images/saw-logo-hd.svg" alt="Official Shashwat Ashapura Woods Brand Hallmark Plaque"
-              class="hallmark-plaque-img">
+            <img loading="lazy" src="assets/images/saw-logo-hd.svg" alt="Official Shashwat Ashapura Woods Brand Hallmark Plaque"
+              class="hallmark-plaque-img" width="254" height="146" decoding="async">
           </div>
           <div class="hallmark-info">
             <span class="hallmark-tag">ORIGINAL CLIENT HALLMARK</span>
@@ -942,7 +954,7 @@
     style="background: linear-gradient(180deg, var(--color-cream-bg) 0%, #EDE6D8 100%); position: relative; overflow: hidden; padding: 6rem 0;">
     <!-- Background Watermark / Accent Grain Pattern -->
     <div
-      style="position: absolute; right: -4%; top: 6%; font-family: var(--font-instrument, var(--font-serif)); font-size: 16vw; font-weight: 700; color: rgba(212, 175, 55, 0.04); line-height: 1; pointer-events: none; user-select: none;">
+      style="position: absolute; right: -4%; top: 6%; font-family: var(--font-instrument, var(--font-serif)); font-size: 16vw; font-weight: 700; color: rgba(212, 175, 55, 0.04); line-height: 1; pointer-events: none; -webkit-user-select: none; user-select: none;">
       PLYWOOD
     </div>
 
@@ -973,19 +985,19 @@
           style="background: var(--color-white); border-radius: var(--radius-lg); border: 1px solid var(--color-cream-border); box-shadow: var(--shadow-lg); overflow: hidden; display: flex; flex-direction: column; transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);">
           <div
             style="position: relative; background: #0E291C; padding: 1.25rem; border-bottom: 2px solid var(--color-cream-border); display: flex; align-items: center; justify-content: center; min-height: 260px; overflow: hidden;">
-            <img src="assets/images/product-wudplus-densified-sheet.jpg"
+            <img decoding="async" loading="lazy" src="assets/images/product-wudplus-densified-sheet.jpg"
               alt="WudPlus Densified Shuttering Plywood Authentic Calibrated Board"
               style="width: 100%; height: 250px; object-fit: cover; object-position: center 25%; border-radius: var(--radius-md); box-shadow: 0 4px 18px rgba(0,0,0,0.25);">
             <div
-              style="position: absolute; bottom: 22px; left: 22px; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); padding: 8px 16px; border-radius: 999px; display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-md); border: 1px solid rgba(212, 175, 55, 0.2);">
-              <img src="assets/images/docx-image1.png" alt="WudPlus Brand Logo"
+              style="position: absolute; bottom: 22px; left: 22px; background: rgba(255,255,255,0.96); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); padding: 8px 16px; border-radius: 999px; display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-md); border: 1px solid rgba(212, 175, 55, 0.2);">
+              <img decoding="async" loading="lazy" src="assets/images/docx-image1.png" alt="WudPlus Brand Logo"
                 style="height: 26px; width: auto; object-fit: contain;">
               <span
                 style="font-size: 0.74rem; font-weight: 700; color: var(--color-forest-primary); letter-spacing: 0.03em;">DENSIFIED
                 &bull; ALL LAYERS GLUED</span>
             </div>
             <span
-              style="position: absolute; top: 22px; right: 22px; background: rgba(15, 17, 21, 0.94); color: #FFF; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; backdrop-filter: blur(4px); border: 1px solid rgba(198, 146, 85, 0.4);">
+              style="position: absolute; top: 22px; right: 22px; background: rgba(15, 17, 21, 0.94); color: #FFF; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); border: 1px solid rgba(198, 146, 85, 0.4);">
               Factory Shot &bull; Real Stock
             </span>
           </div>
@@ -1054,19 +1066,19 @@
           style="background: var(--color-white); border-radius: var(--radius-lg); border: 1px solid var(--color-cream-border); box-shadow: var(--shadow-lg); overflow: hidden; display: flex; flex-direction: column; transition: transform var(--transition-smooth), box-shadow var(--transition-smooth);">
           <div
             style="position: relative; background: #0E291C; padding: 1.25rem; border-bottom: 2px solid var(--color-cream-border); display: flex; align-items: center; justify-content: center; min-height: 260px; overflow: hidden;">
-            <img src="assets/images/commando-18-slab-red-board.jpg"
+            <img decoding="async" loading="lazy" src="assets/images/commando-18-slab-red-board.jpg"
               alt="COMMANDO Film Face Shuttering Plywood 18-Slab Official Brand Board"
               style="width: 100%; height: 250px; object-fit: cover; object-position: center 20%; border-radius: var(--radius-md); box-shadow: 0 4px 18px rgba(0,0,0,0.25);">
             <div
-              style="position: absolute; bottom: 22px; left: 22px; background: rgba(255,255,255,0.96); backdrop-filter: blur(8px); padding: 8px 16px; border-radius: 999px; display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-md); border: 1px solid rgba(212, 175, 55, 0.2);">
-              <img src="assets/images/commando-logo.png" alt="COMMANDO Official Logo"
+              style="position: absolute; bottom: 22px; left: 22px; background: rgba(255,255,255,0.96); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); padding: 8px 16px; border-radius: 999px; display: flex; align-items: center; gap: 10px; box-shadow: var(--shadow-md); border: 1px solid rgba(212, 175, 55, 0.2);">
+              <img decoding="async" loading="lazy" src="assets/images/commando-logo.png" alt="COMMANDO Official Logo"
                 style="height: 26px; width: auto; object-fit: contain;">
               <span
                 style="font-size: 0.74rem; font-weight: 700; color: var(--color-forest-primary); letter-spacing: 0.03em;">18
                 SLAB &bull; TOTALLY HARDWOOD</span>
             </div>
             <span
-              style="position: absolute; top: 22px; right: 22px; background: rgba(15, 17, 21, 0.94); color: #FFF; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; backdrop-filter: blur(4px); border: 1px solid rgba(198, 146, 85, 0.4);">
+              style="position: absolute; top: 22px; right: 22px; background: rgba(15, 17, 21, 0.94); color: #FFF; font-size: 0.72rem; font-weight: 700; padding: 4px 10px; border-radius: 4px; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); border: 1px solid rgba(198, 146, 85, 0.4);">
               Official Trademark &bull; IS: 4990
             </span>
           </div>
@@ -1252,7 +1264,7 @@
         <div class="product-card">
           <div class="product-image-box">
             <span class="product-category-tag">Heavy Construction</span>
-            <img src="assets/images/product-showcase-wudplus-commando.jpg"
+            <img decoding="async" loading="lazy" src="assets/images/product-showcase-wudplus-commando.jpg"
               alt="Premium Shuttering Film Faced Plywood - WudPlus & COMMANDO" class="product-image">
             <div class="product-image-gradient"></div>
           </div>
@@ -1294,7 +1306,7 @@
         <div class="product-card">
           <div class="product-image-box">
             <span class="product-category-tag">Structural Softwood</span>
-            <img src="assets/images/site-slab-prop-timber-joists.jpg"
+            <img decoding="async" loading="lazy" src="assets/images/site-slab-prop-timber-joists.jpg"
               alt="Selected Shuttering Pine Wood Runners & Joists on Active Site" class="product-image">
             <div class="product-image-gradient"></div>
           </div>
@@ -1336,7 +1348,7 @@
         <div class="product-card">
           <div class="product-image-box">
             <span class="product-category-tag">Global Imports</span>
-            <img src="assets/images/intro-timber.jpg" alt="Pinewood Species Assortment" class="product-image">
+            <img decoding="async" loading="lazy" src="assets/images/intro-timber.jpg" alt="Pinewood Species Assortment" class="product-image">
             <div class="product-image-gradient"></div>
           </div>
           <div class="product-content">
@@ -1381,7 +1393,8 @@
           <span class="section-label light">Flagship Shuttering Brands</span>
           <h3 class="section-title light" style="font-size: clamp(1.8rem, 3vw, 2.5rem);">Featured Plywood Brands</h3>
           <p class="section-subtitle light">
-            Directly imported and stocked by Shashwat Ashapura Woods &mdash; trusted across India for dependable strength,
+            Directly imported and stocked by Shashwat Ashapura Woods &mdash; trusted across India for dependable
+            strength,
             high repeat casting cycles, and smooth concrete mirror finish.
           </p>
         </div>
@@ -1391,7 +1404,7 @@
           <div class="product-card" style="background: rgba(18, 20, 25, 0.75); border-color: rgba(198, 146, 85, 0.35);">
             <div
               style="background: #ffffff; padding: 2.2rem 2rem; border-radius: var(--radius-lg) var(--radius-lg) 0 0; display: flex; align-items: center; justify-content: center; min-height: 190px; border-bottom: 2px solid rgba(198, 146, 85, 0.25);">
-              <img src="assets/images/docx-image1.png" alt="WudPlus Densified Shuttering Plywood Official Logo"
+              <img decoding="async" loading="lazy" src="assets/images/docx-image1.png" alt="WudPlus Densified Shuttering Plywood Official Logo"
                 style="max-height: 125px; width: auto; object-fit: contain; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.06));">
             </div>
             <div class="product-content">
@@ -1435,13 +1448,17 @@
           <div class="product-card" style="background: rgba(18, 20, 25, 0.75); border-color: rgba(198, 146, 85, 0.35);">
             <div
               style="position: relative; background: #0E291C; border-radius: var(--radius-lg) var(--radius-lg) 0 0; display: flex; align-items: center; justify-content: center; height: 195px; overflow: hidden; border-bottom: 2px solid rgba(198, 146, 85, 0.25);">
-              <img src="assets/images/commando-18-slab-red-board.jpg" alt="COMMANDO Film Face Shuttering Plywood 18-Slab Official Board Print"
+              <img decoding="async" loading="lazy" src="assets/images/commando-18-slab-red-board.jpg"
+                alt="COMMANDO Film Face Shuttering Plywood 18-Slab Official Board Print"
                 style="width: 100%; height: 100%; object-fit: cover; object-position: center 20%; filter: brightness(0.97);">
-              <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(14,41,28,0.85) 0%, rgba(14,41,28,0.1) 60%);"></div>
+              <div
+                style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(14,41,28,0.85) 0%, rgba(14,41,28,0.1) 60%);">
+              </div>
               <div style="position: absolute; bottom: 12px; left: 16px; display: flex; align-items: center; gap: 8px;">
-                <img src="assets/images/commando-logo.png" alt="COMMANDO Official Logo"
+                <img decoding="async" loading="lazy" src="assets/images/commando-logo.png" alt="COMMANDO Official Logo"
                   style="height: 24px; width: auto; background: rgba(255,255,255,0.95); padding: 3px 8px; border-radius: 4px; box-shadow: 0 2px 8px rgba(0,0,0,0.2);">
-                <span style="color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;">18 SLAB &bull; ALL GLUE LINE</span>
+                <span style="color: #fff; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.04em;">18 SLAB &bull;
+                  ALL GLUE LINE</span>
               </div>
             </div>
             <div class="product-content">
@@ -1528,7 +1545,7 @@
           <!-- Species Card 01: Uruguay Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img src="assets/images/species-uruguay.jpg" alt="Uruguay Pine Timber" class="species-card-img">
+              <img decoding="async" loading="lazy" src="assets/images/species-uruguay.jpg" alt="Uruguay Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Uruguay &bull; S. America</span>
             </div>
             <div class="species-card-body">
@@ -1548,7 +1565,8 @@
                   <span class="metric-val">Formwork &bull; Pallets</span>
                 </div>
               </div>
-              <button class="species-explore-btn" data-species="uruguay" onclick="window.sawOpenSpeciesModal('uruguay', event)">
+              <button class="species-explore-btn" data-species="uruguay"
+                onclick="window.sawOpenSpeciesModal('uruguay', event)">
                 <span>Explore Technical Specs</span>
                 <span class="arrow-icon">&rarr;</span>
               </button>
@@ -1558,7 +1576,7 @@
           <!-- Species Card 02: Austral Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img src="assets/images/species-austral.jpg" alt="Austral Pine Timber" class="species-card-img">
+              <img decoding="async" loading="lazy" src="assets/images/species-austral.jpg" alt="Austral Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Southern Hemisphere</span>
             </div>
             <div class="species-card-body">
@@ -1578,7 +1596,8 @@
                   <span class="metric-val">Civil Joists &bull; Battens</span>
                 </div>
               </div>
-              <button class="species-explore-btn" data-species="austral" onclick="window.sawOpenSpeciesModal('austral', event)">
+              <button class="species-explore-btn" data-species="austral"
+                onclick="window.sawOpenSpeciesModal('austral', event)">
                 <span>Explore Technical Specs</span>
                 <span class="arrow-icon">&rarr;</span>
               </button>
@@ -1588,7 +1607,7 @@
           <!-- Species Card 03: USA / SYP Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img src="assets/images/species-syp.jpg" alt="USA SYP Pine Timber" class="species-card-img">
+              <img decoding="async" loading="lazy" src="assets/images/species-syp.jpg" alt="USA SYP Pine Timber" class="species-card-img">
               <span class="species-origin-badge">United States (SYP)</span>
             </div>
             <div class="species-card-body">
@@ -1618,7 +1637,7 @@
           <!-- Species Card 04: New Zealand Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img src="assets/images/species-nz.jpg" alt="New Zealand Pine Timber" class="species-card-img">
+              <img decoding="async" loading="lazy" src="assets/images/species-nz.jpg" alt="New Zealand Pine Timber" class="species-card-img">
               <span class="species-origin-badge">New Zealand Radiata</span>
             </div>
             <div class="species-card-body">
@@ -1648,7 +1667,7 @@
           <!-- Species Card 05: Spruce Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img src="assets/images/species-spruce.jpg" alt="Spruce Pine Timber" class="species-card-img">
+              <img decoding="async" loading="lazy" src="assets/images/species-spruce.jpg" alt="Spruce Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Nordic / Europe</span>
             </div>
             <div class="species-card-body">
@@ -1668,7 +1687,8 @@
                   <span class="metric-val">Framing &bull; Staging Studs</span>
                 </div>
               </div>
-              <button class="species-explore-btn" data-species="spruce" onclick="window.sawOpenSpeciesModal('spruce', event)">
+              <button class="species-explore-btn" data-species="spruce"
+                onclick="window.sawOpenSpeciesModal('spruce', event)">
                 <span>Explore Technical Specs</span>
                 <span class="arrow-icon">&rarr;</span>
               </button>
@@ -1678,7 +1698,7 @@
           <!-- Species Card 06: Silk Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img src="assets/images/species-silk.jpg" alt="Silk Pine Timber" class="species-card-img">
+              <img decoding="async" loading="lazy" src="assets/images/species-silk.jpg" alt="Silk Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Selected Forest Reserves</span>
             </div>
             <div class="species-card-body">
@@ -1698,7 +1718,8 @@
                   <span class="metric-val">Fair-Faced &bull; Moulding</span>
                 </div>
               </div>
-              <button class="species-explore-btn" data-species="silk" onclick="window.sawOpenSpeciesModal('silk', event)">
+              <button class="species-explore-btn" data-species="silk"
+                onclick="window.sawOpenSpeciesModal('silk', event)">
                 <span>Explore Technical Specs</span>
                 <span class="arrow-icon">&rarr;</span>
               </button>
@@ -1857,7 +1878,7 @@
     <div class="quality-split-grid">
       <!-- Left Visual Macro Inspection -->
       <div class="quality-visual-col">
-        <img src="assets/images/hero-plywood.jpg" alt="Plywood Cross Section Macro" class="quality-visual-img">
+        <img decoding="async" loading="lazy" src="assets/images/hero-plywood.jpg" alt="Plywood Cross Section Macro" class="quality-visual-img">
         <div class="quality-visual-overlay"></div>
 
         <!-- Interactive Hotspots -->
@@ -1954,15 +1975,17 @@
 
         <!-- Application 01: Construction -->
         <div class="app-card" data-app-cat="construction">
-          <img src="assets/images/app-construction-hd.jpg"
-            alt="Active Commercial Slab and Column Formwork with Red Film-Faced Shuttering Plywood" class="app-card-img">
+          <img decoding="async" loading="lazy" src="assets/images/app-construction-hd.jpg"
+            alt="Active Commercial Slab and Column Formwork with Red Film-Faced Shuttering Plywood"
+            class="app-card-img">
           <div class="app-card-overlay">
             <div class="app-card-tags">
               <span class="app-card-number">01 / APPLICATION</span>
               <span class="app-badge-pill">Slab &amp; Column Shuttering</span>
             </div>
             <h3 class="app-card-title">Construction</h3>
-            <p class="app-card-desc">Mirror-finish slab decking, calibrated column boxes, shear walls, and monolithic casting.</p>
+            <p class="app-card-desc">Mirror-finish slab decking, calibrated column boxes, shear walls, and monolithic
+              casting.</p>
             <div class="app-spec-bar">
               <span>18mm Calibrated Film-Face</span>
               <span>&bull;</span>
@@ -1973,15 +1996,16 @@
 
         <!-- Application 02: Infrastructure Formwork -->
         <div class="app-card" data-app-cat="formwork">
-          <img src="assets/images/site-red-film-face-formwork-04.jpg" alt="Expansive High-Rise Floor Slab Formwork Decking"
-            class="app-card-img">
+          <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-04.jpg"
+            alt="Expansive High-Rise Floor Slab Formwork Decking" class="app-card-img">
           <div class="app-card-overlay">
             <div class="app-card-tags">
               <span class="app-card-number">02 / APPLICATION</span>
               <span class="app-badge-pill">Heavy Infrastructure</span>
             </div>
             <h3 class="app-card-title">Infrastructure Formwork</h3>
-            <p class="app-card-desc">Heavy bridge decks, metro viaducts, flyovers, culverts, and high-rise core engineering.</p>
+            <p class="app-card-desc">Heavy bridge decks, metro viaducts, flyovers, culverts, and high-rise core
+              engineering.</p>
             <div class="app-spec-bar">
               <span>30+ Repetitive Pours</span>
               <span>&bull;</span>
@@ -1992,15 +2016,16 @@
 
         <!-- Application 03: Timber Staging & Shoring -->
         <div class="app-card" data-app-cat="staging">
-          <img src="assets/images/site-red-film-face-formwork-02.jpg" alt="Heavy Structural Column and Beam Timber Bracing Walers"
-            class="app-card-img">
+          <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-02.jpg"
+            alt="Heavy Structural Column and Beam Timber Bracing Walers" class="app-card-img">
           <div class="app-card-overlay">
             <div class="app-card-tags">
               <span class="app-card-number">03 / APPLICATION</span>
               <span class="app-badge-pill">Structural Shoring</span>
             </div>
             <h3 class="app-card-title">Timber Staging &amp; Walers</h3>
-            <p class="app-card-desc">Heavy load-bearing pine battens, props, bracing walers, and falsework staging towers.</p>
+            <p class="app-card-desc">Heavy load-bearing pine battens, props, bracing walers, and falsework staging
+              towers.</p>
             <div class="app-spec-bar">
               <span>Kiln-Dried 2x3, 3x4, 4x4</span>
               <span>&bull;</span>
@@ -2011,15 +2036,16 @@
 
         <!-- Application 04: Precast & Retaining Walls -->
         <div class="app-card" data-app-cat="precast">
-          <img src="assets/images/site-red-film-face-formwork-03.jpg" alt="Civil Retaining Wall and Concrete Formwork Deck Walkthrough"
-            class="app-card-img">
+          <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-03.jpg"
+            alt="Civil Retaining Wall and Concrete Formwork Deck Walkthrough" class="app-card-img">
           <div class="app-card-overlay">
             <div class="app-card-tags">
               <span class="app-card-number">04 / APPLICATION</span>
               <span class="app-badge-pill">Basement &amp; Precast</span>
             </div>
             <h3 class="app-card-title">Precast &amp; Retaining Walls</h3>
-            <p class="app-card-desc">Heavy foundation footings, basement retaining walls, culverts, and precast beam casting yards.</p>
+            <p class="app-card-desc">Heavy foundation footings, basement retaining walls, culverts, and precast beam
+              casting yards.</p>
             <div class="app-spec-bar">
               <span>Hydrophobic Phenolic Film</span>
               <span>&bull;</span>
@@ -2030,7 +2056,7 @@
 
         <!-- Application 05: Precision Sizing & Runners -->
         <div class="app-card" data-app-cat="runners">
-          <img src="assets/images/pinewood-formwork-runners.jpg" alt="Calibrated Structural Pinewood Runners in Bundles"
+          <img decoding="async" loading="lazy" src="assets/images/pinewood-formwork-runners.jpg" alt="Calibrated Structural Pinewood Runners in Bundles"
             class="app-card-img">
           <div class="app-card-overlay">
             <div class="app-card-tags">
@@ -2038,7 +2064,8 @@
               <span class="app-badge-pill">Sawmill Calibrated</span>
             </div>
             <h3 class="app-card-title">Custom Timber Sizing</h3>
-            <p class="app-card-desc">Sawmill breakdown of global pine logs into calibrated structural joists and beam runners.</p>
+            <p class="app-card-desc">Sawmill breakdown of global pine logs into calibrated structural joists and beam
+              runners.</p>
             <div class="app-spec-bar">
               <span>Uruguay, Austral &amp; SYP Pine</span>
               <span>&bull;</span>
@@ -2049,15 +2076,16 @@
 
         <!-- Application 06: Port Warehousing & Industrial -->
         <div class="app-card" data-app-cat="industrial">
-          <img src="assets/images/warehouse-shuttering-plywood-dispatch.jpg" alt="Gandhidham Timber Yard Same-Day Forklift Dispatch Loading"
-            class="app-card-img">
+          <img decoding="async" loading="lazy" src="assets/images/warehouse-shuttering-plywood-dispatch.jpg"
+            alt="Gandhidham Timber Yard Same-Day Forklift Dispatch Loading" class="app-card-img">
           <div class="app-card-overlay">
             <div class="app-card-tags">
               <span class="app-card-number">06 / APPLICATION</span>
               <span class="app-badge-pill">Seaport Logistics</span>
             </div>
             <h3 class="app-card-title">Industrial &amp; Seaport Logistics</h3>
-            <p class="app-card-desc">Same-day direct seaport dispatch, export machinery crating, and heavy industrial storage pallets.</p>
+            <p class="app-card-desc">Same-day direct seaport dispatch, export machinery crating, and heavy industrial
+              storage pallets.</p>
             <div class="app-spec-bar">
               <span>15,000+ MT Port Buffer</span>
               <span>&bull;</span>
@@ -2171,10 +2199,14 @@
 
       <!-- Filter Tabs -->
       <div class="gallery-filter-tabs">
-        <button class="gallery-tab active" data-filter="all" onclick="window.sawFilterGallery('all', event)">All Photography</button>
-        <button class="gallery-tab" data-filter="construction" onclick="window.sawFilterGallery('construction', event)">Construction &amp; Formwork</button>
-        <button class="gallery-tab" data-filter="plywood" onclick="window.sawFilterGallery('plywood', event)">Shuttering Plywood</button>
-        <button class="gallery-tab" data-filter="pinewood" onclick="window.sawFilterGallery('pinewood', event)">Pinewood Species</button>
+        <button class="gallery-tab active" data-filter="all" onclick="window.sawFilterGallery('all', event)">All
+          Photography</button>
+        <button class="gallery-tab" data-filter="construction"
+          onclick="window.sawFilterGallery('construction', event)">Construction &amp; Formwork</button>
+        <button class="gallery-tab" data-filter="plywood" onclick="window.sawFilterGallery('plywood', event)">Shuttering
+          Plywood</button>
+        <button class="gallery-tab" data-filter="pinewood" onclick="window.sawFilterGallery('pinewood', event)">Pinewood
+          Species</button>
       </div>
 
       <!-- Gallery Grid -->
@@ -2182,8 +2214,9 @@
 
         <!-- 01: High-Rise Slab & Column Red Film-Faced Formwork (Hero Span-2) -->
         <div class="gallery-item span-2" data-category="construction">
-          <img src="assets/images/site-red-film-face-formwork-01.jpg"
-            alt="Commercial High-Rise Table Decking & Column Formwork with Red Film-Faced Shuttering Plywood" class="gallery-img">
+          <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-01.jpg"
+            alt="Commercial High-Rise Table Decking & Column Formwork with Red Film-Faced Shuttering Plywood"
+            class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
             <h4 class="gallery-caption-title">Commercial Table Decking &amp; Column Formwork</h4>
@@ -2193,7 +2226,7 @@
 
         <!-- 02: Plywood Product Showcase -->
         <div class="gallery-item" data-category="plywood">
-          <img src="assets/images/product-showcase-wudplus-commando.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/product-showcase-wudplus-commando.jpg"
             alt="WudPlus and COMMANDO Shuttering Plywood Showcase" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2204,7 +2237,7 @@
 
         <!-- 03: Column Box & Table Formwork Staging -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-red-film-face-formwork-02.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-02.jpg"
             alt="High-Rise Red Film-Faced Shuttering Plywood Column Boxes & Table Staging" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2215,7 +2248,7 @@
 
         <!-- 04: COMMANDO 18-Slab Pack (Span-2) -->
         <div class="gallery-item span-2" data-category="plywood">
-          <img src="assets/images/product-commando-film-faced-sheet.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/product-commando-film-faced-sheet.jpg"
             alt="COMMANDO Film Faced Shuttering Plywood 18-Sheet Hardwood Stack" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2226,7 +2259,7 @@
 
         <!-- 04B: COMMANDO Official 18-Slab Brand Board -->
         <div class="gallery-item" data-category="plywood">
-          <img src="assets/images/commando-18-slab-red-board.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/commando-18-slab-red-board.jpg"
             alt="COMMANDO 18-Slab Film Faced Shuttering Plywood Official Board Face" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2237,7 +2270,7 @@
 
         <!-- 05: Slab Props & Joists -->
         <div class="gallery-item" data-category="pinewood">
-          <img src="assets/images/site-slab-prop-timber-joists.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-slab-prop-timber-joists.jpg"
             alt="Kiln Dried Pinewood Runners and Heavy Steel Props" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2248,7 +2281,7 @@
 
         <!-- 06: WudPlus Densified Sheet -->
         <div class="gallery-item" data-category="plywood">
-          <img src="assets/images/product-wudplus-densified-sheet.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/product-wudplus-densified-sheet.jpg"
             alt="WudPlus Densified Shuttering Plywood Sheet - All Layers Glued" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2259,8 +2292,9 @@
 
         <!-- 07: Precision Column Box & Beam Shuttering Alignment -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-red-film-face-formwork-03.jpg"
-            alt="Precision Shuttering Formwork Alignment with Red Film-Faced Plywood & Pine Runners" class="gallery-img">
+          <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-03.jpg"
+            alt="Precision Shuttering Formwork Alignment with Red Film-Faced Plywood & Pine Runners"
+            class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
             <h4 class="gallery-caption-title">Precision Column Box &amp; Beam Staging</h4>
@@ -2270,7 +2304,7 @@
 
         <!-- 08: Carpenter Column Box Assembly -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-carpenter-column-box-shuttering.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-carpenter-column-box-shuttering.jpg"
             alt="Master Carpenter Assembling Timber Column Shuttering Box" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2281,7 +2315,7 @@
 
         <!-- 09: WudPlus Grid Pattern Close-up -->
         <div class="gallery-item" data-category="plywood">
-          <img src="assets/images/product-wudplus-grid-closeup.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/product-wudplus-grid-closeup.jpg"
             alt="Macro Detail of WudPlus Grid Pattern and Calibrated Thickness" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2292,7 +2326,7 @@
 
         <!-- 10: Clamped Column Box Formwork -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-column-clamp-timber-box.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-column-clamp-timber-box.jpg"
             alt="Heavy Steel Clamps Fastened Around Timber Column Formwork" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2303,7 +2337,7 @@
 
         <!-- 11: Expansive Concrete Floor Decking (Span-2) -->
         <div class="gallery-item span-2" data-category="construction">
-          <img src="assets/images/site-red-film-face-formwork-04.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-04.jpg"
             alt="Seamless Red Film-Faced Shuttering Plywood Floor Slab Decking and Rebar Grid" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2314,7 +2348,7 @@
 
         <!-- 12: Warehouse Stacks Dispatch -->
         <div class="gallery-item" data-category="plywood">
-          <img src="assets/images/warehouse-shuttering-plywood-dispatch.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/warehouse-shuttering-plywood-dispatch.jpg"
             alt="Heavy Shuttering Plywood Bulk Warehouse Stacks Ready for Dispatch" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2325,7 +2359,7 @@
 
         <!-- 13: Retaining Wall Pine Shuttering -->
         <div class="gallery-item" data-category="pinewood">
-          <img src="assets/images/site-retaining-wall-timber-shuttering.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-retaining-wall-timber-shuttering.jpg"
             alt="Pine Shuttering Planks and Battens for Retaining Wall" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2336,7 +2370,7 @@
 
         <!-- 14: Elevated Beam Box Formwork -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-elevated-beam-box-formwork.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-elevated-beam-box-formwork.jpg"
             alt="Elevated Beam Shuttering and Worker on Scaffolding" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2347,7 +2381,7 @@
 
         <!-- 15: Deep Trench Timber Staging -->
         <div class="gallery-item" data-category="pinewood">
-          <img src="assets/images/site-deep-trench-timber-staging.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-deep-trench-timber-staging.jpg"
             alt="Deep Foundation Trench Shoring with Structural Pine Lumber" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2358,7 +2392,7 @@
 
         <!-- 16: Beam Bottom Alignment -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-beam-bottom-alignment.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-beam-bottom-alignment.jpg"
             alt="Beam Soffit and Timber Runner Laser Level Alignment" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2369,7 +2403,7 @@
 
         <!-- 17: Foundation Wall Formwork -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-foundation-wall-formwork.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-foundation-wall-formwork.jpg"
             alt="Reinforced Concrete Foundation Wall Timber Formwork" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2380,7 +2414,7 @@
 
         <!-- 18: Formwork Engineering Diagram (Span-2) -->
         <div class="gallery-item span-2" data-category="construction">
-          <img src="assets/images/formwork-engineering-diagram.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/formwork-engineering-diagram.jpg"
             alt="Technical Formwork Structural Staging Engineering Blueprint" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2391,7 +2425,7 @@
 
         <!-- 19: Skyline Structural Beam & Column Formwork (Span-2) -->
         <div class="gallery-item span-2" data-category="construction">
-          <img src="assets/images/site-structural-beam-skyline-formwork.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-structural-beam-skyline-formwork.jpg"
             alt="Structural Column Rebar and Beam Wooden Formwork under Clear Sky" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2402,7 +2436,7 @@
 
         <!-- 20: Beam Soffit Timber Runners & Steel Props -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-beam-soffit-props-formwork.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-beam-soffit-props-formwork.jpg"
             alt="Continuous Beam Soffit Shuttering with Pinewood Runners and Heavy Props" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2413,7 +2447,7 @@
 
         <!-- 21: High Timber Waler Staging with Carpenter -->
         <div class="gallery-item" data-category="pinewood">
-          <img src="assets/images/site-timber-waler-carpenter-staging.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-timber-waler-carpenter-staging.jpg"
             alt="Carpenter on Heavy Pinewood Waler Wall Formwork and Diagonal Shoring" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2424,7 +2458,7 @@
 
         <!-- 22: SHASHWAT ASHAPURA High-Rise Column Formwork at Dusk (Span-2) -->
         <div class="gallery-item span-2" data-category="construction">
-          <img src="assets/images/site-saw-column-formwork-dusk.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-saw-column-formwork-dusk.jpg"
             alt="SHASHWAT ASHAPURA WOODS High-Rise Column Formwork at Sunset with COMMANDO 18 Slab" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2435,7 +2469,7 @@
 
         <!-- 23: WudPlus Column Formwork & Active Concrete Pour -->
         <div class="gallery-item" data-category="construction">
-          <img src="assets/images/site-saw-column-concrete-pour.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-saw-column-concrete-pour.jpg"
             alt="SHASHWAT ASHAPURA WOODS WudPlus Column Formwork & Active Concrete Pour" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2446,7 +2480,7 @@
 
         <!-- 24: COMMANDO 18-Slab Floor Slab & Beam Formwork -->
         <div class="gallery-item" data-category="plywood">
-          <img src="assets/images/site-saw-beam-slab-formwork.jpg"
+          <img decoding="async" loading="lazy" src="assets/images/site-saw-beam-slab-formwork.jpg"
             alt="COMMANDO 18-Slab Film Faced Shuttering Plywood Floor Slab and Beam Formwork" class="gallery-img">
           <div class="gallery-hover-overlay">
             <span class="gallery-expand-icon">&plus;</span>
@@ -2468,13 +2502,15 @@
         <span class="section-tag">Media Center &bull; Live Worksite Cinema</span>
         <h2 class="section-title">See Our Timber In Real Construction Action</h2>
         <p class="section-subtitle">
-          Watch real-world concrete slab shuttering, heavy timber waler bracing, and join Foreman Vikram for an animated tour of our Gandhidham stocking yards and imported pine species.
+          Watch real-world concrete slab shuttering, heavy timber waler bracing, and join Foreman Vikram for an animated
+          tour of our Gandhidham stocking yards and imported pine species.
         </p>
       </div>
 
       <!-- Video Experience Mode Switcher -->
       <div class="video-mode-tabs">
-        <button type="button" class="video-mode-tab active" id="tabModeCinema" onclick="window.sawSwitchVideoMode('cinema')">
+        <button type="button" class="video-mode-tab active" id="tabModeCinema"
+          onclick="window.sawSwitchVideoMode('cinema')">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
             <polygon points="5 3 19 12 5 21 5 3"></polygon>
           </svg>
@@ -2497,10 +2533,8 @@
       <div class="video-mode-content active" id="modeCinemaContent">
         <div class="cinema-theater-box" id="cinemaTheaterBox">
           <div class="cinema-video-wrap">
-            <video id="spotlightVideo" class="cinema-player" 
-              src="assets/videos/commando-formwork-site-live.mp4" 
-              poster="assets/images/commando-formwork-live-poster.jpg" 
-              playsinline preload="auto" muted
+            <video id="spotlightVideo" class="cinema-player" src="assets/videos/commando-formwork-site-live.mp4"
+              poster="assets/images/commando-formwork-live-poster.jpg" playsinline preload="auto" muted
               onclick="window.sawToggleVideoPlayback()">
               <source src="assets/videos/commando-formwork-site-live.mp4" type="video/mp4">
               <source src="assets/videos/high-rise-construction-skyline.mp4" type="video/mp4">
@@ -2517,19 +2551,23 @@
               </div>
               <div class="cinema-audio-tools">
                 <!-- Continuous Playlist Auto-Loop Pill -->
-                <div class="cinema-loop-pill" title="Sequential continuous auto-play enabled (loops infinitely from last video back to first)">
+                <div class="cinema-loop-pill"
+                  title="Sequential continuous auto-play enabled (loops infinitely from last video back to first)">
                   <span class="loop-dot"></span>
                   <span class="loop-text">Sequential Auto-Loop</span>
                 </div>
 
                 <!-- Video Audio Toggle (Mute / Unmute) -->
-                <button type="button" class="cinema-sound-btn" id="btnVideoSound" onclick="window.sawToggleVideoAudio()" title="Mute/Unmute Video Audio">
-                  <svg id="iconSoundMuted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <button type="button" class="cinema-sound-btn" id="btnVideoSound" onclick="window.sawToggleVideoAudio()"
+                  title="Mute/Unmute Video Audio">
+                  <svg id="iconSoundMuted" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2">
                     <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                     <line x1="23" y1="9" x2="17" y2="15"></line>
                     <line x1="17" y1="9" x2="23" y2="15"></line>
                   </svg>
-                  <svg id="iconSoundActive" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" style="display:none;">
+                  <svg id="iconSoundActive" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2.2" style="display:none;">
                     <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
                     <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
                   </svg>
@@ -2537,7 +2575,8 @@
                 </button>
 
                 <!-- Professional Studio Cinematic Soundtrack Toggle -->
-                <button type="button" class="cinema-music-btn" id="btnBgmMusic" onclick="window.sawToggleBgm()" title="Play Professional Studio Cinematic Soundtrack">
+                <button type="button" class="cinema-music-btn" id="btnBgmMusic" onclick="window.sawToggleBgm()"
+                  title="Play Professional Studio Cinematic Soundtrack">
                   <span class="music-wave-bars">
                     <span class="eq-bar bar-1"></span>
                     <span class="eq-bar bar-2"></span>
@@ -2550,11 +2589,13 @@
             </div>
 
             <!-- Big Center Play Button Overlay -->
-            <button type="button" class="cinema-center-play" id="cinemaCenterPlayBtn" onclick="window.sawToggleVideoPlayback()" aria-label="Play or Pause Video">
+            <button type="button" class="cinema-center-play" id="cinemaCenterPlayBtn"
+              onclick="window.sawToggleVideoPlayback()" aria-label="Play or Pause Video">
               <svg id="iconPlayTriangle" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
                 <polygon points="5 3 19 12 5 21 5 3"></polygon>
               </svg>
-              <svg id="iconPauseBars" width="30" height="30" viewBox="0 0 24 24" fill="currentColor" style="display:none;">
+              <svg id="iconPauseBars" width="30" height="30" viewBox="0 0 24 24" fill="currentColor"
+                style="display:none;">
                 <rect x="6" y="4" width="4" height="16"></rect>
                 <rect x="14" y="4" width="4" height="16"></rect>
               </svg>
@@ -2563,13 +2604,16 @@
             <!-- Bottom information overlay -->
             <div class="cinema-bottom-bar">
               <div class="cinema-meta">
-                <h3 class="cinema-headline" id="cinemaActiveHeadline">COMMANDO™ 18mm Slab Shuttering &amp; Column Formwork Site</h3>
+                <h3 class="cinema-headline" id="cinemaActiveHeadline">COMMANDO™ 18mm Slab Shuttering &amp; Column
+                  Formwork Site</h3>
                 <p class="cinema-desc" id="cinemaActiveDesc">
-                  Live on-site installation of COMMANDO™ calibrated 18mm film-faced plywood column boxes and slab shuttering decking with heavy steel rebars and timber runners.
+                  Live on-site installation of COMMANDO™ calibrated 18mm film-faced plywood column boxes and slab
+                  shuttering decking with heavy steel rebars and timber runners.
                 </p>
               </div>
               <div class="cinema-cta-wrap">
-                <button type="button" class="btn btn-primary" onclick="window.sawOpenQuoteModal('Shutter Plywood & Pine Runners', event)">
+                <button type="button" class="btn btn-primary"
+                  onclick="window.sawOpenQuoteModal('Shutter Plywood & Pine Runners', event)">
                   <span>Order Formwork Timber</span>
                   <span class="arrow-icon">&rarr;</span>
                 </button>
@@ -2583,35 +2627,40 @@
           <!-- Card 0: COMMANDO™ 18mm Slab & Column Formwork Site (Live Site Video) -->
           <div class="video-card active" id="videoCard0" onclick="window.sawSelectVideo(0)">
             <div class="video-card-thumb">
-              <img src="assets/images/commando-formwork-live-poster.jpg" alt="COMMANDO™ 18mm Slab Shuttering & Column Formwork Site">
+              <img decoding="async" loading="lazy" src="assets/images/commando-formwork-live-poster.jpg"
+                alt="COMMANDO™ 18mm Slab Shuttering & Column Formwork Site">
               <span class="video-card-duration">0:42</span>
               <span class="video-card-play-badge">&#9658;</span>
             </div>
             <div class="video-card-info">
               <span class="video-card-tag">Live Site Formwork</span>
               <h4 class="video-card-title">COMMANDO™ 18mm Column Shuttering</h4>
-              <p class="video-card-text">Live site installation of 18mm film-faced plywood column boxes and steel rebars.</p>
+              <p class="video-card-text">Live site installation of 18mm film-faced plywood column boxes and steel
+                rebars.</p>
             </div>
           </div>
 
           <!-- Card 1: Certified Pinewood & Structural Runners (Branded with SAW, WudPlus, Commando) -->
           <div class="video-card" id="videoCard1" onclick="window.sawSelectVideo(1)">
             <div class="video-card-thumb">
-              <img src="assets/images/pinewood-timber-branding-poster.jpg" alt="Certified Pinewood Sizing & Structural Runners - SAW, WudPlus, Commando">
+              <img decoding="async" loading="lazy" src="assets/images/pinewood-timber-branding-poster.jpg"
+                alt="Certified Pinewood Sizing & Structural Runners - SAW, WudPlus, Commando">
               <span class="video-card-duration">0:26</span>
               <span class="video-card-play-badge">&#9658;</span>
             </div>
             <div class="video-card-info">
               <span class="video-card-tag">Pinewood &amp; Sizing</span>
               <h4 class="video-card-title">Certified Pinewood &amp; Structural Runners</h4>
-              <p class="video-card-text">Port log sizing &amp; precision 2x3, 3x4, 4x4 runners featuring SAW, WudPlus™ &amp; COMMANDO™.</p>
+              <p class="video-card-text">Port log sizing &amp; precision 2x3, 3x4, 4x4 runners featuring SAW, WudPlus™
+                &amp; COMMANDO™.</p>
             </div>
           </div>
 
           <!-- Card 2: Commercial Heavy Timber Staging -->
           <div class="video-card" id="videoCard2" onclick="window.sawSelectVideo(2)">
             <div class="video-card-thumb">
-              <img src="assets/images/site-red-film-face-formwork-02.jpg" alt="Commercial Heavy Timber Staging and Framing">
+              <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-02.jpg"
+                alt="Commercial Heavy Timber Staging and Framing">
               <span class="video-card-duration">0:45</span>
               <span class="video-card-play-badge">&#9658;</span>
             </div>
@@ -2625,7 +2674,7 @@
           <!-- Card 3: Wet Concrete Pouring on Formwork -->
           <div class="video-card" id="videoCard3" onclick="window.sawSelectVideo(3)">
             <div class="video-card-thumb">
-              <img src="assets/images/site-red-film-face-formwork-04.jpg" alt="Concrete Pouring on Shuttering Formwork">
+              <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-04.jpg" alt="Concrete Pouring on Shuttering Formwork">
               <span class="video-card-duration">0:32</span>
               <span class="video-card-play-badge">&#9658;</span>
             </div>
@@ -2639,7 +2688,8 @@
           <!-- Card 4: Gandhidham Port Same-Day Dispatch Loading -->
           <div class="video-card" id="videoCard4" onclick="window.sawSelectVideo(4)">
             <div class="video-card-thumb">
-              <img src="assets/images/warehouse-shuttering-plywood-dispatch.jpg" alt="Gandhidham Yard Same-Day Dispatch Loading">
+              <img decoding="async" loading="lazy" src="assets/images/warehouse-shuttering-plywood-dispatch.jpg"
+                alt="Gandhidham Yard Same-Day Dispatch Loading">
               <span class="video-card-duration">0:28</span>
               <span class="video-card-play-badge">&#9658;</span>
             </div>
@@ -2653,28 +2703,32 @@
           <!-- Card 5: Gandhidham Timber Yards & Sawn Pine -->
           <div class="video-card" id="videoCard5" onclick="window.sawSelectVideo(5)">
             <div class="video-card-thumb">
-              <img src="assets/images/product-showcase-wudplus-commando.jpg" alt="Gandhidham Timber Yard Sawn Pine & Stock">
+              <img decoding="async" loading="lazy" src="assets/images/product-showcase-wudplus-commando.jpg"
+                alt="Gandhidham Timber Yard Sawn Pine & Stock">
               <span class="video-card-duration">1:15</span>
               <span class="video-card-play-badge">&#9658;</span>
             </div>
             <div class="video-card-info">
               <span class="video-card-tag">Gandhidham Mill Yard</span>
               <h4 class="video-card-title">Port Yard Bulk Pine Stock</h4>
-              <p class="video-card-text">15,000+ MT kiln-dried pine runners &amp; WudPlus™ boards stacked for loading.</p>
+              <p class="video-card-text">15,000+ MT kiln-dried pine runners &amp; WudPlus™ boards stacked for loading.
+              </p>
             </div>
           </div>
 
           <!-- Card 6: Direct Seaport Timber Buffer & Quality Inspection -->
           <div class="video-card" id="videoCard6" onclick="window.sawSelectVideo(6)">
             <div class="video-card-thumb">
-              <img src="assets/images/site-red-film-face-formwork-03.jpg" alt="Direct Seaport Timber Buffer and Quality Inspection">
+              <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-03.jpg"
+                alt="Direct Seaport Timber Buffer and Quality Inspection">
               <span class="video-card-duration">0:54</span>
               <span class="video-card-play-badge">&#9658;</span>
             </div>
             <div class="video-card-info">
               <span class="video-card-tag">Stock Inspection</span>
               <h4 class="video-card-title">Port Stock &amp; Quality Inspection</h4>
-              <p class="video-card-text">On-site walkthrough of imported pinewood bundles and densified film-faced ply.</p>
+              <p class="video-card-text">On-site walkthrough of imported pinewood bundles and densified film-faced ply.
+              </p>
             </div>
           </div>
         </div>
@@ -2720,14 +2774,17 @@
 
                 <!-- Left Arm Holding Shuttering Board "WudPlus" -->
                 <g>
-                  <path d="M72 124 L48 160 Q44 172 52 180 L58 178" fill="none" stroke="#D4AF37" stroke-width="16" stroke-linecap="round" />
+                  <path d="M72 124 L48 160 Q44 172 52 180 L58 178" fill="none" stroke="#D4AF37" stroke-width="16"
+                    stroke-linecap="round" />
                   <!-- Hand holding board -->
                   <circle cx="58" cy="180" r="10" fill="#FAD7A0" />
                   <!-- Miniature WudPlus Board -->
                   <g transform="rotate(-15 50 190)">
-                    <rect x="18" y="160" width="34" height="60" rx="3" fill="#7A4E2D" stroke="#D4AF37" stroke-width="1.5" />
+                    <rect x="18" y="160" width="34" height="60" rx="3" fill="#7A4E2D" stroke="#D4AF37"
+                      stroke-width="1.5" />
                     <rect x="22" y="165" width="26" height="14" fill="#15181F" />
-                    <text x="35" y="174" font-size="5" fill="#D4AF37" font-weight="bold" text-anchor="middle" font-family="sans-serif">WUDPLUS</text>
+                    <text x="35" y="174" font-size="5" fill="#D4AF37" font-weight="bold" text-anchor="middle"
+                      font-family="sans-serif">WUDPLUS</text>
                     <line x1="22" y1="184" x2="48" y2="184" stroke="#D4AF37" stroke-width="1" />
                     <line x1="22" y1="190" x2="48" y2="190" stroke="#D4AF37" stroke-width="1" />
                   </g>
@@ -2735,12 +2792,14 @@
 
                 <!-- Right Arm: Waving Animated Arm with Rolled Blueprint -->
                 <g class="mascot-wave-arm">
-                  <path d="M168 124 L196 100 Q205 92 210 102 L206 112" fill="none" stroke="#D4AF37" stroke-width="16" stroke-linecap="round" />
+                  <path d="M168 124 L196 100 Q205 92 210 102 L206 112" fill="none" stroke="#D4AF37" stroke-width="16"
+                    stroke-linecap="round" />
                   <!-- Hand -->
                   <circle cx="210" cy="100" r="10" fill="#FAD7A0" />
                   <!-- Rolled Blueprint Cylinder -->
                   <g transform="rotate(-35 210 95)">
-                    <rect x="202" y="65" width="14" height="48" rx="6" fill="#3498DB" stroke="#2980B9" stroke-width="1.5" />
+                    <rect x="202" y="65" width="14" height="48" rx="6" fill="#3498DB" stroke="#2980B9"
+                      stroke-width="1.5" />
                     <line x1="205" y1="75" x2="213" y2="75" stroke="#FFFFFF" stroke-width="1" opacity="0.8" />
                     <line x1="205" y1="88" x2="213" y2="88" stroke="#FFFFFF" stroke-width="1" opacity="0.8" />
                   </g>
@@ -2770,17 +2829,21 @@
                   <circle cx="135" cy="72" r="1.8" fill="#FFFFFF" />
                 </g>
                 <!-- Expressive Eyebrows -->
-                <path d="M100 64 Q106 60 112 64" fill="none" stroke="#6A3B18" stroke-width="2.5" stroke-linecap="round" />
-                <path d="M128 64 Q134 60 140 64" fill="none" stroke="#6A3B18" stroke-width="2.5" stroke-linecap="round" />
+                <path d="M100 64 Q106 60 112 64" fill="none" stroke="#6A3B18" stroke-width="2.5"
+                  stroke-linecap="round" />
+                <path d="M128 64 Q134 60 140 64" fill="none" stroke="#6A3B18" stroke-width="2.5"
+                  stroke-linecap="round" />
 
                 <!-- Friendly Nose & Big Smile -->
                 <circle cx="120" cy="81" r="3" fill="#E59866" />
-                <path d="M110 88 Q120 102 130 88" fill="none" stroke="#7A4E2D" stroke-width="3" stroke-linecap="round" />
+                <path d="M110 88 Q120 102 130 88" fill="none" stroke="#7A4E2D" stroke-width="3"
+                  stroke-linecap="round" />
                 <!-- Neat Mustache / Beard Stubble -->
                 <path d="M113 86 Q120 90 127 86" fill="none" stroke="#8C6D15" stroke-width="1.8" opacity="0.7" />
 
                 <!-- Safety Hardhat (Yellow / Gold with SAW Emblem) -->
-                <path d="M82 64 Q120 22 158 64 Q170 66 170 70 Q170 74 158 73 L82 73 Q70 74 70 70 Q70 66 82 64 Z" fill="#F1C40F" stroke="#D4AC0D" stroke-width="2" />
+                <path d="M82 64 Q120 22 158 64 Q170 66 170 70 Q170 74 158 73 L82 73 Q70 74 70 70 Q70 66 82 64 Z"
+                  fill="#F1C40F" stroke="#D4AC0D" stroke-width="2" />
                 <!-- Hardhat Crest Ridge -->
                 <path d="M115 28 L125 28 L123 68 L117 68 Z" fill="#F39C12" />
                 <!-- Hardhat SAW Brand Emblem -->
@@ -2804,25 +2867,33 @@
             <div class="story-chapter-stepper" id="storyChapterStepper">
               <button type="button" class="step-pill active" onclick="window.sawGoToChapter(0)">1. Who We Are</button>
               <button type="button" class="step-pill" onclick="window.sawGoToChapter(1)">2. 6 Pine Species</button>
-              <button type="button" class="step-pill" onclick="window.sawGoToChapter(2)">3. WudPlus™ &amp; COMMANDO™</button>
-              <button type="button" class="step-pill" onclick="window.sawGoToChapter(3)">4. Gandhidham Yard &amp; Kiln</button>
-              <button type="button" class="step-pill" onclick="window.sawGoToChapter(4)">5. Pan-India Wholesale Supply</button>
+              <button type="button" class="step-pill" onclick="window.sawGoToChapter(2)">3. WudPlus™ &amp;
+                COMMANDO™</button>
+              <button type="button" class="step-pill" onclick="window.sawGoToChapter(3)">4. Gandhidham Yard &amp;
+                Kiln</button>
+              <button type="button" class="step-pill" onclick="window.sawGoToChapter(4)">5. Pan-India Wholesale
+                Supply</button>
             </div>
 
             <!-- Dialogue & Company Presentation Card -->
             <div class="story-dialogue-card" id="storyDialogueCard">
               <div>
                 <div class="story-dialogue-header">
-                  <span class="story-chapter-number" id="storyChapterNum">Chapter 01 of 05 &bull; The Gandhidham Timber Hub</span>
+                  <span class="story-chapter-number" id="storyChapterNum">Chapter 01 of 05 &bull; The Gandhidham Timber
+                    Hub</span>
                   <span class="story-timer-pill" id="storyAutoBadge">Auto-Play: OFF</span>
                 </div>
 
-                <h3 class="story-headline" id="storyTitle">Namaste! Welcome to India's Direct Port-Based Timber Source</h3>
+                <h3 class="story-headline" id="storyTitle">Namaste! Welcome to India's Direct Port-Based Timber Source
+                </h3>
 
                 <!-- Cartoon Speech Bubble -->
                 <div class="story-speech-bubble">
                   <p class="story-speech-text" id="storySpeech">
-                    &ldquo;Hello contractors, developers, and engineers! I&rsquo;m Foreman Vikram. For over 15+ years, <strong>Shashwat Ashapura Woods</strong> has supplied first-grade imported pinewood and shuttering plywood straight from our 15,000+ MT stocking yards near Kandla &amp; Mundra Ports! We cut out brokers so your jobsite gets certified timber at unbeatable mill prices.&rdquo;
+                    &ldquo;Hello contractors, developers, and engineers! I&rsquo;m Foreman Vikram. For over 15+ years,
+                    <strong>Shashwat Ashapura Woods</strong> has supplied first-grade imported pinewood and shuttering
+                    plywood straight from our 15,000+ MT stocking yards near Kandla &amp; Mundra Ports! We cut out
+                    brokers so your jobsite gets certified timber at unbeatable mill prices.&rdquo;
                   </p>
                 </div>
 
@@ -2846,20 +2917,24 @@
               <!-- Interactive Navigation & Call-to-Actions -->
               <div class="story-actions-bar">
                 <div class="story-nav-btns">
-                  <button type="button" class="btn btn-secondary" onclick="window.sawPrevChapter()" id="btnPrevChapter" style="padding: 0.6rem 1.1rem;">
+                  <button type="button" class="btn btn-secondary" onclick="window.sawPrevChapter()" id="btnPrevChapter"
+                    style="padding: 0.6rem 1.1rem;">
                     &larr; Prev
                   </button>
-                  <button type="button" class="btn btn-secondary" onclick="window.sawNextChapter()" id="btnNextChapter" style="padding: 0.6rem 1.1rem;">
+                  <button type="button" class="btn btn-secondary" onclick="window.sawNextChapter()" id="btnNextChapter"
+                    style="padding: 0.6rem 1.1rem;">
                     Next Chapter &rarr;
                   </button>
-                  <button type="button" class="btn btn-secondary" onclick="window.sawToggleStoryAuto()" id="btnToggleAutoStory" style="padding: 0.6rem 1.1rem; font-size: 0.8rem;">
+                  <button type="button" class="btn btn-secondary" onclick="window.sawToggleStoryAuto()"
+                    id="btnToggleAutoStory" style="padding: 0.6rem 1.1rem; font-size: 0.8rem;">
                     Play Tour &bull;
                   </button>
                 </div>
 
                 <div class="story-cta-btns">
-                  <a href="https://wa.me/919099514179?text=Hello%20Vikram%2C%20I%20am%20watching%20the%20animated%20story%20on%20your%20website%20and%20want%20wholesale%20rates%20for%20our%20project." 
-                    target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="background:#25D366; border-color:#25D366; color:#0A0B0E; font-weight:700;">
+                  <a href="https://wa.me/919099514179?text=Hello%20Vikram%2C%20I%20am%20watching%20the%20animated%20story%20on%20your%20website%20and%20want%20wholesale%20rates%20for%20our%20project."
+                    target="_blank" rel="noopener noreferrer" class="btn btn-primary"
+                    style="background:#25D366; border-color:#25D366; color:#0A0B0E; font-weight:700;">
                     <span>Ask Vikram on WhatsApp</span>
                     <span class="arrow-icon">&rarr;</span>
                   </a>
@@ -2897,7 +2972,8 @@
       <span class="section-label light">Direct Timber Consultation</span>
       <h2 class="cta-banner-title">Looking for the Right Wood Solution?</h2>
       <p class="cta-banner-desc">
-        Talk to our team about your shuttering plywood and pinewood requirements. We provide technical guidance, sample pieces, and structured wholesale pricing.
+        Talk to our team about your shuttering plywood and pinewood requirements. We provide technical guidance, sample
+        pieces, and structured wholesale pricing.
       </p>
       <div class="cta-banner-actions">
         <button class="btn btn-secondary open-quote-modal" data-product="Bulk Supply"
@@ -2991,77 +3067,110 @@
           target="_blank" rel="noopener noreferrer" class="whatsapp-banner-card" onclick="window.sawOpenWaPop(event)"
           style="margin-bottom: 1.5rem; text-decoration: none; cursor: pointer;">
           <div class="whatsapp-text">
-            <h5 style="margin: 0 0 4px; font-size: 1rem; font-weight: 700; color: #fff;">Direct WhatsApp Desks (+91 90995 14179 / +91 97144 95348)</h5>
-            <p style="margin: 0; font-size: 0.82rem; opacity: 0.95; color: rgba(255,255,255,0.92);">Connect with our sales or purchase team instantly for live stock &amp; pricing.</p>
+            <h5 style="margin: 0 0 4px; font-size: 1rem; font-weight: 700; color: #fff;">Direct WhatsApp Desks (+91
+              90995 14179 / +91 97144 95348)</h5>
+            <p style="margin: 0; font-size: 0.82rem; opacity: 0.95; color: rgba(255,255,255,0.92);">Connect with our
+              sales or purchase team instantly for live stock &amp; pricing.</p>
           </div>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex-shrink: 0; margin-left: 1rem;">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+            style="flex-shrink: 0; margin-left: 1rem;">
             <polyline points="9 18 15 12 9 6" />
           </svg>
         </a>
 
         <!-- Facility & Dispatch Yard Photography Showcase -->
-        <div class="contact-facility-showcase" style="background: var(--color-white); border: 1px solid var(--color-cream-border); border-radius: var(--radius-md); padding: 1.25rem; box-shadow: var(--shadow-sm); margin-bottom: 1.5rem;">
-          <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 8px;">
+        <div class="contact-facility-showcase"
+          style="background: var(--color-white); border: 1px solid var(--color-cream-border); border-radius: var(--radius-md); padding: 1.25rem; box-shadow: var(--shadow-sm); margin-bottom: 1.5rem;">
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.85rem; flex-wrap: wrap; gap: 8px;">
             <div style="display: flex; align-items: center; gap: 8px;">
-              <span style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #25D366;"></span>
-              <strong style="font-size: 0.95rem; color: var(--color-charcoal);">Gandhidham Timber Yard &amp; Dispatch Facility</strong>
+              <span
+                style="display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: #25D366;"></span>
+              <strong style="font-size: 0.95rem; color: var(--color-charcoal);">Gandhidham Timber Yard &amp; Dispatch
+                Facility</strong>
             </div>
-            <span style="font-size: 0.75rem; background: rgba(198, 146, 85, 0.12); color: var(--color-wood-brown); padding: 3px 8px; border-radius: 4px; font-weight: 600;">CBM &bull; Pine Woods &amp; Shuttering Woods</span>
+            <span
+              style="font-size: 0.75rem; background: rgba(198, 146, 85, 0.12); color: var(--color-wood-brown); padding: 3px 8px; border-radius: 4px; font-weight: 600;">CBM
+              &bull; Pine Woods &amp; Shuttering Woods</span>
           </div>
 
-          <div style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 10px; border-radius: var(--radius-sm); overflow: hidden;">
+          <div
+            style="display: grid; grid-template-columns: 1.4fr 1fr; gap: 10px; border-radius: var(--radius-sm); overflow: hidden;">
             <div style="position: relative; height: 180px; overflow: hidden; border-radius: 6px;">
-              <img src="assets/images/warehouse-shuttering-plywood-dispatch.jpg" alt="Shashwat Gandhidham Bulk Shuttering Plywood Stacks" style="width: 100%; height: 100%; object-fit: cover;">
-              <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%); padding: 8px 10px; color: #fff; font-size: 0.76rem; font-weight: 600;">
+              <img decoding="async" loading="lazy" src="assets/images/warehouse-shuttering-plywood-dispatch.jpg"
+                alt="Shashwat Gandhidham Bulk Shuttering Plywood Stacks"
+                style="width: 100%; height: 100%; object-fit: cover;">
+              <div
+                style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%); padding: 8px 10px; color: #fff; font-size: 0.76rem; font-weight: 600;">
                 Gandhidham Yard Bulk Stacks
               </div>
             </div>
             <div style="display: flex; flex-direction: column; gap: 10px;">
               <div style="position: relative; height: 85px; overflow: hidden; border-radius: 6px;">
-                <img src="assets/images/product-showcase-wudplus-commando.jpg" alt="WudPlus & COMMANDO Stock Inspection" style="width: 100%; height: 100%; object-fit: cover;">
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%); padding: 4px 8px; color: #fff; font-size: 0.7rem; font-weight: 600;">
+                <img decoding="async" loading="lazy" src="assets/images/product-showcase-wudplus-commando.jpg" alt="WudPlus & COMMANDO Stock Inspection"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+                <div
+                  style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%); padding: 4px 8px; color: #fff; font-size: 0.7rem; font-weight: 600;">
                   Shuttering Plywood &amp; Pine Woods
                 </div>
               </div>
               <div style="position: relative; height: 85px; overflow: hidden; border-radius: 6px;">
-                <img src="assets/images/site-red-film-face-formwork-01.jpg" alt="Active Civil Site Formwork Supply" style="width: 100%; height: 100%; object-fit: cover;">
-                <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%); padding: 4px 8px; color: #fff; font-size: 0.7rem; font-weight: 600;">
+                <img decoding="async" loading="lazy" src="assets/images/site-red-film-face-formwork-01.jpg" alt="Active Civil Site Formwork Supply"
+                  style="width: 100%; height: 100%; object-fit: cover;">
+                <div
+                  style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 100%); padding: 4px 8px; color: #fff; font-size: 0.7rem; font-weight: 600;">
                   Pan-India Civil Supply
                 </div>
               </div>
             </div>
           </div>
           <!-- Same-Day Dispatch Guarantee & High CTR Action Block -->
-          <div class="same-day-dispatch-card" style="margin-top: 1rem; background: linear-gradient(135deg, rgba(253, 248, 238, 0.98) 0%, rgba(245, 232, 215, 0.95) 100%); border: 1.5px solid rgba(198, 146, 85, 0.45); border-radius: var(--radius-sm); padding: 1rem 1.15rem; box-shadow: 0 4px 16px rgba(113, 45, 18, 0.08);">
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 0.6rem;">
-              <div style="display: inline-flex; align-items: center; gap: 8px; background: #682A12; color: #FFFDF9; padding: 4px 12px; border-radius: 999px; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">
+          <div class="same-day-dispatch-card"
+            style="margin-top: 1rem; background: linear-gradient(135deg, rgba(253, 248, 238, 0.98) 0%, rgba(245, 232, 215, 0.95) 100%); border: 1.5px solid rgba(198, 146, 85, 0.45); border-radius: var(--radius-sm); padding: 1rem 1.15rem; box-shadow: 0 4px 16px rgba(113, 45, 18, 0.08);">
+            <div
+              style="display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; margin-bottom: 0.6rem;">
+              <div
+                style="display: inline-flex; align-items: center; gap: 8px; background: #682A12; color: #FFFDF9; padding: 4px 12px; border-radius: 999px; font-size: 0.76rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase;">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5D7A1" stroke-width="2.5">
                   <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
                 </svg>
                 Guaranteed Same-Day Dispatch
               </div>
-              <span style="font-size: 0.76rem; font-weight: 700; color: #16803C; display: inline-flex; align-items: center; gap: 6px;">
-                <span style="width: 7px; height: 7px; border-radius: 50%; background: #25D366; display: inline-block;"></span>
+              <span
+                style="font-size: 0.76rem; font-weight: 700; color: #16803C; display: inline-flex; align-items: center; gap: 6px;">
+                <span
+                  style="width: 7px; height: 7px; border-radius: 50%; background: #25D366; display: inline-block;"></span>
                 Active Loading Desk &bull; Priority Trailer Allotment
               </span>
             </div>
 
             <p style="margin: 0 0 0.85rem 0; font-size: 0.84rem; line-height: 1.55; color: var(--color-charcoal);">
-              <strong>Zero Jobsite Downtime Guarantee:</strong> Eliminate concrete pouring delays. Confirmed orders for <strong>Film-Faced Shuttering Plywood</strong> and <strong>Pine Wood</strong> are crane-loaded and dispatched on the <strong>very same day</strong> directly from our Gandhidham port stock yards with dedicated trailer clearance across all national civil infrastructure corridors.
+              <strong>Zero Jobsite Downtime Guarantee:</strong> Eliminate concrete pouring delays. Confirmed orders for
+              <strong>Film-Faced Shuttering Plywood</strong> and <strong>Pine Wood</strong> are crane-loaded and
+              dispatched on the <strong>very same day</strong> directly from our Gandhidham port stock yards with
+              dedicated trailer clearance across all national civil infrastructure corridors.
             </p>
 
-            <div style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
-              <div style="display: flex; align-items: center; gap: 14px; font-size: 0.78rem; color: var(--color-charcoal-muted); flex-wrap: wrap;">
+            <div
+              style="display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;">
+              <div
+                style="display: flex; align-items: center; gap: 14px; font-size: 0.78rem; color: var(--color-charcoal-muted); flex-wrap: wrap;">
                 <span style="display: inline-flex; align-items: center; gap: 5px;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
                   Orders before 3:00 PM Dispatched Today
                 </span>
                 <span style="display: inline-flex; align-items: center; gap: 5px;">
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2">
+                    <polyline points="20 6 9 17 4 12" />
+                  </svg>
                   Instant E-Way Bill &amp; Live GPS Tracking
                 </span>
               </div>
-              <button type="button" class="btn btn-primary" onclick="window.sawOpenQuoteModal('Same-Day Priority Dispatch', event)" style="padding: 0.5rem 1.15rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.3px; border-radius: 6px; box-shadow: 0 4px 12px rgba(113, 45, 18, 0.25);">
+              <button type="button" class="btn btn-primary"
+                onclick="window.sawOpenQuoteModal('Same-Day Priority Dispatch', event)"
+                style="padding: 0.5rem 1.15rem; font-size: 0.82rem; font-weight: 700; letter-spacing: 0.3px; border-radius: 6px; box-shadow: 0 4px 12px rgba(113, 45, 18, 0.25);">
                 <span>Request Same-Day Dispatch &rarr;</span>
               </button>
             </div>
@@ -3100,15 +3209,26 @@
       <!-- Right Column: Professional Enquiry Form -->
       <div class="enquiry-form-card">
         <!-- Yard Dispatch Banner inside Enquiry Form -->
-        <div style="border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 1.5rem; position: relative; height: 135px; box-shadow: var(--shadow-sm);">
-          <img src="assets/images/warehouse-shuttering-plywood-dispatch.jpg" alt="Shashwat Ashapura Woods Dispatch Yard" style="width: 100%; height: 100%; object-fit: cover;">
-          <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 11, 14, 0.45) 0%, rgba(8, 9, 11, 0.95) 100%);"></div>
-          <div style="position: absolute; bottom: 0.85rem; left: 1rem; right: 1rem; display: flex; justify-content: space-between; align-items: flex-end; color: #fff;">
+        <div
+          style="border-radius: var(--radius-sm); overflow: hidden; margin-bottom: 1.5rem; position: relative; height: 135px; box-shadow: var(--shadow-sm);">
+          <img decoding="async" loading="lazy" src="assets/images/warehouse-shuttering-plywood-dispatch.jpg" alt="Shashwat Ashapura Woods Dispatch Yard"
+            style="width: 100%; height: 100%; object-fit: cover;">
+          <div
+            style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10, 11, 14, 0.45) 0%, rgba(8, 9, 11, 0.95) 100%);">
+          </div>
+          <div
+            style="position: absolute; bottom: 0.85rem; left: 1rem; right: 1rem; display: flex; justify-content: space-between; align-items: flex-end; color: #fff;">
             <div>
-              <span style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-gold-light); font-weight: 700;">Direct Mill &amp; Yard Dispatch</span>
-              <div style="font-size: 1.05rem; color: #fff; font-weight: 700; font-family: var(--font-serif); margin-top: 2px;">Gandhidham Timber Hub Order Desk</div>
+              <span
+                style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.08em; color: var(--color-gold-light); font-weight: 700;">Direct
+                Mill &amp; Yard Dispatch</span>
+              <div
+                style="font-size: 1.05rem; color: #fff; font-weight: 700; font-family: var(--font-serif); margin-top: 2px;">
+                Gandhidham Timber Hub Order Desk</div>
             </div>
-            <span style="background: rgba(37, 211, 102, 0.25); border: 1px solid #25D366; color: #25D366; font-size: 0.72rem; padding: 3px 9px; border-radius: 12px; font-weight: 600;">Active Daily Loading</span>
+            <span
+              style="background: rgba(37, 211, 102, 0.25); border: 1px solid #25D366; color: #25D366; font-size: 0.72rem; padding: 3px 9px; border-radius: 12px; font-weight: 600;">Active
+              Daily Loading</span>
           </div>
         </div>
 
@@ -3116,287 +3236,310 @@
         <p class="form-subtitle">Fill in your requirements below and our commercial wood desk will respond with exact
           pricing and lead times.</p>
 
-      <form id="mainEnquiryForm">
-        <div class="enquiry-form-grid">
-          <div class="form-group">
-            <label class="form-label" for="contactName">Full Name *</label>
-            <input type="text" class="form-control" id="contactName" required placeholder="e.g. Rajesh Sharma">
-          </div>
+        <form id="mainEnquiryForm">
+          <div class="enquiry-form-grid">
+            <div class="form-group">
+              <label class="form-label" for="contactName">Full Name *</label>
+              <input type="text" class="form-control" id="contactName" required placeholder="e.g. Rajesh Sharma">
+            </div>
 
-          <div class="form-group">
-            <label class="form-label" for="contactCompany">Company / Business Name</label>
-            <input type="text" class="form-control" id="contactCompany" placeholder="e.g. Apex Infra Projects">
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="contactCompany">Company / Business Name</label>
+              <input type="text" class="form-control" id="contactCompany" placeholder="e.g. Apex Infra Projects">
+            </div>
 
-          <div class="form-group">
-            <label class="form-label" for="contactPhone">Phone Number *</label>
-            <input type="tel" class="form-control" id="contactPhone" required placeholder="+91 90995 14179">
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="contactPhone">Phone Number *</label>
+              <input type="tel" class="form-control" id="contactPhone" required placeholder="+91 90995 14179">
+            </div>
 
-          <div class="form-group">
-            <label class="form-label" for="contactEmail">Email Address *</label>
-            <input type="email" class="form-control" id="contactEmail" required placeholder="name@company.com">
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="contactEmail">Email Address *</label>
+              <input type="email" class="form-control" id="contactEmail" required placeholder="name@company.com">
+            </div>
 
-          <!-- Product Dropdown matching PRD #22 -->
-          <div class="form-group">
-            <label class="form-label" for="contactProduct">Product Interested In *</label>
-            <select class="form-control" id="contactProduct" required>
-              <option value="" disabled selected>Select Product Category</option>
-              <option value="Film Faced Shuttering Ply">Film Faced Shuttering Ply</option>
-              <option value="Pine Wood">Pine Wood</option>
-              <option value="Both (Pine Wood &amp; Film Faced Shuttering Ply)">Both (Pine Wood &amp; Film Faced Shuttering Ply)</option>
-              <option value="Other">Other / Custom Timber Specifications</option>
-            </select>
-          </div>
+            <!-- Product Dropdown matching PRD #22 -->
+            <div class="form-group">
+              <label class="form-label" for="contactProduct">Product Interested In *</label>
+              <select class="form-control" id="contactProduct" required>
+                <option value="" disabled selected>Select Product Category</option>
+                <option value="Film Faced Shuttering Ply">Film Faced Shuttering Ply</option>
+                <option value="Pine Wood">Pine Wood</option>
+                <option value="Both (Pine Wood &amp; Film Faced Shuttering Ply)">Both (Pine Wood &amp; Film Faced
+                  Shuttering Ply)</option>
+                <option value="Other">Other / Custom Timber Specifications</option>
+              </select>
+            </div>
 
-          <div class="form-group">
-            <label class="form-label" for="contactQty">Estimated Quantity / Thickness</label>
-            <input type="text" class="form-control" id="contactQty" placeholder="e.g. 500 Sheets (18mm) or 1 Container">
-          </div>
+            <div class="form-group">
+              <label class="form-label" for="contactQty">Estimated Quantity / Thickness</label>
+              <input type="text" class="form-control" id="contactQty"
+                placeholder="e.g. 500 Sheets (18mm) or 1 Container">
+            </div>
 
-          <div class="form-group full">
-            <label class="form-label" for="contactMessage">Message / Specific Requirements</label>
-            <textarea class="form-control" id="contactMessage"
-              placeholder="Specify site location, expected delivery date, custom cross-sections, or project details..."></textarea>
-          </div>
+            <div class="form-group full">
+              <label class="form-label" for="contactMessage">Message / Specific Requirements</label>
+              <textarea class="form-control" id="contactMessage"
+                placeholder="Specify site location, expected delivery date, custom cross-sections, or project details..."></textarea>
+            </div>
 
-          <div class="form-group full">
-            <button type="submit" class="btn btn-primary" id="mainEnquirySubmit" style="width: 100%;">
-              <span>Send Enquiry</span>
-              <span class="arrow-icon">&rarr;</span>
-            </button>
+            <div class="form-group full">
+              <button type="submit" class="btn btn-primary" id="mainEnquirySubmit" style="width: 100%;">
+                <span>Send Enquiry</span>
+                <span class="arrow-icon">&rarr;</span>
+              </button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
 
-      <!-- ====================================================================
+        <!-- ====================================================================
            SHASHWAT GROUP OFFICIAL BRAND HALLMARK & CORPORATE LOGO SHOWCASE
            ==================================================================== -->
-      <div class="contact-brand-hallmark-card" id="contactBrandHallmark">
-        <div class="contact-brand-hallmark-top">
-          <div class="contact-brand-badge-pill">
-            <span class="hallmark-pulse-dot"></span>
-            <span>Official Corporate Hallmark &bull; Shashwat Group</span>
-          </div>
-          <span class="contact-brand-loc-tag">📍 Gandhidham Port Timber Hub &bull; Gujarat</span>
-        </div>
-
-        <div class="contact-brand-hallmark-body">
-          <div class="contact-brand-logo-frame">
-            <img src="assets/images/saw-logo-hd.svg"
-                 alt="Shashwat Group - Shashwat Ashapura Woods (SAW) Official Logo"
-                 class="contact-brand-hallmark-logo">
-            <div class="logo-frame-footer-badge">
-              <span class="logo-frame-cert">IS:4990 &bull; ISO 9001:2015</span>
-              <span class="logo-frame-hub">Direct Port Timber Hub &bull; Gandhidham</span>
+        <div class="contact-brand-hallmark-card" id="contactBrandHallmark">
+          <div class="contact-brand-hallmark-top">
+            <div class="contact-brand-badge-pill">
+              <span class="hallmark-pulse-dot"></span>
+              <span>Official Corporate Hallmark &bull; Shashwat Group</span>
             </div>
+            <span class="contact-brand-loc-tag">📍 Gandhidham Port Timber Hub &bull; Gujarat</span>
           </div>
 
-          <div class="contact-brand-identity-text">
-            <div class="contact-brand-header-row">
-              <div>
-                <h4 class="contact-brand-company-name">SHASHWAT GROUP</h4>
-                <div class="contact-brand-legal-entity">Shashwat Ashapura Woods (SAW)</div>
-              </div>
-              <div class="contact-brand-sanskrit-motto" title="Niti Shatakam — Ethical Governance & Timeless Principles">
-                ॥ नीति शतकम् ॥
-              </div>
-            </div>
-
-            <p class="contact-brand-mission-desc">
-              India's premier direct port importer &amp; bulk supplier of heavy-densified shuttering plywood and certified global pinewood species. Engineered for maximum concrete repetitions, calibrated zero-void stability, and structural endurance across pan-India infrastructure corridors.
-            </p>
-
-            <div class="contact-brand-pillars-grid">
-              <!-- Chip 1: Pinewoods Sourcing -->
-              <div class="contact-pillar-chip">
-                <span class="pillar-chip-icon">🌲</span>
-                <div>
-                  <strong>Pinewoods Sourcing</strong>
-                  <p>CBM Port Stock &bull; 6 Species</p>
-                </div>
-              </div>
-
-              <!-- Chip 2: Shuttering Woods -->
-              <div class="contact-pillar-chip">
-                <span class="pillar-chip-icon">🪵</span>
-                <div>
-                  <strong>Shuttering Woods</strong>
-                  <p>High Quality Shuttering Plywood</p>
-                </div>
-              </div>
-
-              <!-- Chip 3: Structural Runners -->
-              <div class="contact-pillar-chip">
-                <span class="pillar-chip-icon">📐</span>
-                <div>
-                  <strong>Structural Pine Runners</strong>
-                  <p>2x3, 3x4, 4x4 Battens</p>
-                </div>
-              </div>
-
-              <!-- Chip 4: IS:4990 Certified -->
-              <div class="contact-pillar-chip">
-                <span class="pillar-chip-icon">🛡️</span>
-                <div>
-                  <strong>IS:4990 Certified</strong>
-                  <p>12mm &amp; 18mm Densified</p>
-                </div>
-              </div>
-
-              <!-- Chip 5: Direct Port Logistics -->
-              <div class="contact-pillar-chip">
-                <span class="pillar-chip-icon">🚢</span>
-                <div>
-                  <strong>Direct Port Logistics</strong>
-                  <p>Kandla &amp; Mundra Seaports</p>
-                </div>
-              </div>
-
-              <!-- Chip 6: Zero Core-Void Core -->
-              <div class="contact-pillar-chip">
-                <span class="pillar-chip-icon">✨</span>
-                <div>
-                  <strong>Zero Core-Void Core</strong>
-                  <p>30+ Repetitive Pours</p>
-                </div>
+          <div class="contact-brand-hallmark-body">
+            <div class="contact-brand-logo-frame">
+              <img decoding="async" loading="lazy" src="assets/images/saw-logo-hd.svg"
+                alt="Shashwat Group - Shashwat Ashapura Woods (SAW) Official Logo" class="contact-brand-hallmark-logo">
+              <div class="logo-frame-footer-badge">
+                <span class="logo-frame-cert">IS:4990 &bull; ISO 9001:2015</span>
+                <span class="logo-frame-hub">Direct Port Timber Hub &bull; Gandhidham</span>
               </div>
             </div>
 
-            <!-- Product Division Split: Pinewoods & Shuttering Woods -->
-            <div class="hallmark-products-split">
-              <div class="hallmark-product-box pine-box">
-                <div class="hp-header">
-                  <span class="hp-icon">🌲</span>
+            <div class="contact-brand-identity-text">
+              <div class="contact-brand-header-row">
+                <div>
+                  <h4 class="contact-brand-company-name">SHASHWAT GROUP</h4>
+                  <div class="contact-brand-legal-entity">Shashwat Ashapura Woods (SAW)</div>
+                </div>
+                <div class="contact-brand-sanskrit-motto"
+                  title="Niti Shatakam — Ethical Governance & Timeless Principles">
+                  ॥ नीति शतकम् ॥
+                </div>
+              </div>
+
+              <p class="contact-brand-mission-desc">
+                India's premier direct port importer &amp; bulk supplier of heavy-densified shuttering plywood and
+                certified global pinewood species. Engineered for maximum concrete repetitions, calibrated zero-void
+                stability, and structural endurance across pan-India infrastructure corridors.
+              </p>
+
+              <div class="contact-brand-pillars-grid">
+                <!-- Chip 1: Pinewoods Sourcing -->
+                <div class="contact-pillar-chip">
+                  <span class="pillar-chip-icon">🌲</span>
                   <div>
-                    <strong>Certified Pinewoods Division</strong>
-                    <span>Direct Vessel Imports &bull; Port Sizing Mill</span>
+                    <strong>Pinewoods Sourcing</strong>
+                    <p>CBM Port Stock &bull; 6 Species</p>
                   </div>
                 </div>
-                <ul class="hp-list">
-                  <li><strong>Global Conifers:</strong> Uruguay, Austral, SYP, New Zealand, European Spruce, Silk Pine</li>
-                  <li><strong>Structural Runners:</strong> Kiln-dried 2&quot;x3&quot;, 3&quot;x4&quot;, 4&quot;x4&quot; load-bearing battens</li>
-                  <li><strong>CBM Capacity:</strong> Ready inventory buffer at Kandla &amp; Mundra port belt</li>
-                </ul>
-              </div>
 
-              <div class="hallmark-product-box shutter-box">
-                <div class="hp-header">
-                  <span class="hp-icon">🪵</span>
+                <!-- Chip 2: Shuttering Woods -->
+                <div class="contact-pillar-chip">
+                  <span class="pillar-chip-icon">🪵</span>
                   <div>
-                    <strong>High Quality Shuttering Woods</strong>
-                    <span>IS:4990 Heavy-Densified Formwork Plywood</span>
+                    <strong>Shuttering Woods</strong>
+                    <p>High Quality Shuttering Plywood</p>
                   </div>
                 </div>
-                <ul class="hp-list">
-                  <li><strong>Film-Faced Boards:</strong> 12mm &amp; 18mm phenolic mirror finish for civil slabs &amp; columns</li>
-                  <li><strong>Client Brands:</strong> WudPlus™ &amp; COMMANDO™ calibrated formwork</li>
-                  <li><strong>Pour Longevity:</strong> Zero core-void stability engineered for 30+ repetitions</li>
-                </ul>
+
+                <!-- Chip 3: Structural Runners -->
+                <div class="contact-pillar-chip">
+                  <span class="pillar-chip-icon">📐</span>
+                  <div>
+                    <strong>Structural Pine Runners</strong>
+                    <p>2x3, 3x4, 4x4 Battens</p>
+                  </div>
+                </div>
+
+                <!-- Chip 4: IS:4990 Certified -->
+                <div class="contact-pillar-chip">
+                  <span class="pillar-chip-icon">🛡️</span>
+                  <div>
+                    <strong>IS:4990 Certified</strong>
+                    <p>12mm &amp; 18mm Densified</p>
+                  </div>
+                </div>
+
+                <!-- Chip 5: Direct Port Logistics -->
+                <div class="contact-pillar-chip">
+                  <span class="pillar-chip-icon">🚢</span>
+                  <div>
+                    <strong>Direct Port Logistics</strong>
+                    <p>Kandla &amp; Mundra Seaports</p>
+                  </div>
+                </div>
+
+                <!-- Chip 6: Zero Core-Void Core -->
+                <div class="contact-pillar-chip">
+                  <span class="pillar-chip-icon">✨</span>
+                  <div>
+                    <strong>Zero Core-Void Core</strong>
+                    <p>30+ Repetitive Pours</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Product Division Split: Pinewoods & Shuttering Woods -->
+              <div class="hallmark-products-split">
+                <div class="hallmark-product-box pine-box">
+                  <div class="hp-header">
+                    <span class="hp-icon">🌲</span>
+                    <div>
+                      <strong>Certified Pinewoods Division</strong>
+                      <span>Direct Vessel Imports &bull; Port Sizing Mill</span>
+                    </div>
+                  </div>
+                  <ul class="hp-list">
+                    <li><strong>Global Conifers:</strong> Uruguay, Austral, SYP, New Zealand, European Spruce, Silk Pine
+                    </li>
+                    <li><strong>Structural Runners:</strong> Kiln-dried 2&quot;x3&quot;, 3&quot;x4&quot;,
+                      4&quot;x4&quot; load-bearing battens</li>
+                    <li><strong>CBM Capacity:</strong> Ready inventory buffer at Kandla &amp; Mundra port belt</li>
+                  </ul>
+                </div>
+
+                <div class="hallmark-product-box shutter-box">
+                  <div class="hp-header">
+                    <span class="hp-icon">🪵</span>
+                    <div>
+                      <strong>High Quality Shuttering Woods</strong>
+                      <span>IS:4990 Heavy-Densified Formwork Plywood</span>
+                    </div>
+                  </div>
+                  <ul class="hp-list">
+                    <li><strong>Film-Faced Boards:</strong> 12mm &amp; 18mm phenolic mirror finish for civil slabs &amp;
+                      columns</li>
+                    <li><strong>Client Brands:</strong> WudPlus™ &amp; COMMANDO™ calibrated formwork</li>
+                    <li><strong>Pour Longevity:</strong> Zero core-void stability engineered for 30+ repetitions</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="contact-brand-hallmark-footer">
-          <div class="contact-brand-footer-left">
-            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
-            </svg>
-            <span>100% Authentic Quality Guarantee &bull; Direct Port &amp; Mill Sourcing</span>
+          <div class="contact-brand-hallmark-footer">
+            <div class="contact-brand-footer-left">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+              <span>100% Authentic Quality Guarantee &bull; Direct Port &amp; Mill Sourcing</span>
+            </div>
+            <a href="https://wa.me/919099514179?text=Hello%20Shashwat%20Group%2C%20I%20am%20interested%20in%20direct%20mill%20supply%20from%20your%20Gandhidham%20yard."
+              target="_blank" rel="noopener noreferrer" class="contact-brand-footer-cta">
+              <span>Direct Mill Desk &bull; +91 90995 14179</span> &rarr;
+            </a>
           </div>
-          <a href="https://wa.me/919099514179?text=Hello%20Shashwat%20Group%2C%20I%20am%20interested%20in%20direct%20mill%20supply%20from%20your%20Gandhidham%20yard."
-             target="_blank" rel="noopener noreferrer" class="contact-brand-footer-cta">
-            <span>Direct Mill Desk &bull; +91 90995 14179</span> &rarr;
-          </a>
         </div>
-      </div>
 
-      <!-- ====================================================================
+        <!-- ====================================================================
            CLIENT COMPANY BRANDS & MANUFACTURING MARKS PORTFOLIO
            (SHASHWAT ASHAPURA WOODS, WUDPLUS, COMMANDO & CORPORATE CREDENTIALS)
            ==================================================================== -->
-      <div class="client-brand-portfolio-card" id="clientBrandPortfolio">
-        <div class="portfolio-header">
-          <div class="portfolio-badge-pill">
-            <span class="portfolio-pulse-dot"></span>
-            <span>Client Company Brand Portfolio &bull; Direct Port &amp; Mill Marks</span>
-          </div>
-          <span class="portfolio-tagline">Authorized Manufacturing &amp; Wholesale Brands</span>
-        </div>
-
-        <!-- 3 Core Client Company Brands Grid -->
-        <div class="client-logos-grid">
-          <!-- Brand 1: Shashwat Ashapura Woods (SAW) -->
-          <div class="client-brand-box brand-saw">
-            <div class="client-brand-logo-wrap">
-              <img src="assets/images/saw-logo-hd.svg" alt="Shashwat Ashapura Woods (SAW) Official Logo" class="client-logo-img">
+        <div class="client-brand-portfolio-card" id="clientBrandPortfolio">
+          <div class="portfolio-header">
+            <div class="portfolio-badge-pill">
+              <span class="portfolio-pulse-dot"></span>
+              <span>Client Company Brand Portfolio &bull; Direct Port &amp; Mill Marks</span>
             </div>
-            <div class="client-brand-info">
-              <span class="brand-sub-badge">Parent Corporate Entity</span>
-              <h5 class="brand-name">Shashwat Ashapura Woods</h5>
-              <p class="brand-desc">Direct vessel conifer pine importer, port log breakdown &amp; precision structural timber runners.</p>
-            </div>
+            <span class="portfolio-tagline">Authorized Manufacturing &amp; Wholesale Brands</span>
           </div>
 
-          <!-- Brand 2: WudPlus™ -->
-          <div class="client-brand-box brand-wudplus">
-            <div class="client-brand-logo-wrap">
-              <img src="assets/images/wudplus-logo-transparent.png" alt="WudPlus™ Shuttering Plywood Logo" class="client-logo-img">
+          <!-- 3 Core Client Company Brands Grid -->
+          <div class="client-logos-grid">
+            <!-- Brand 1: Shashwat Ashapura Woods (SAW) -->
+            <div class="client-brand-box brand-saw">
+              <div class="client-brand-logo-wrap">
+                <img decoding="async" loading="lazy" src="assets/images/saw-logo-hd.svg" alt="Shashwat Ashapura Woods (SAW) Official Logo"
+                  class="client-logo-img">
+              </div>
+              <div class="client-brand-info">
+                <span class="brand-sub-badge">Parent Corporate Entity</span>
+                <h5 class="brand-name">Shashwat Ashapura Woods</h5>
+                <p class="brand-desc">Direct vessel conifer pine importer, port log breakdown &amp; precision structural
+                  timber runners.</p>
+              </div>
             </div>
-            <div class="client-brand-info">
-              <span class="brand-sub-badge">Formwork Plywood Brand</span>
-              <h5 class="brand-name">WudPlus™ Plywood</h5>
-              <p class="brand-desc">Calibrated 18mm &amp; 12mm densified phenolic film-faced shuttering plywood engineered for 30+ repetitions.</p>
+
+            <!-- Brand 2: WudPlus™ -->
+            <div class="client-brand-box brand-wudplus">
+              <div class="client-brand-logo-wrap">
+                <img decoding="async" loading="lazy" src="assets/images/wudplus-logo-transparent.png" alt="WudPlus™ Shuttering Plywood Logo"
+                  class="client-logo-img">
+              </div>
+              <div class="client-brand-info">
+                <span class="brand-sub-badge">Formwork Plywood Brand</span>
+                <h5 class="brand-name">WudPlus™ Plywood</h5>
+                <p class="brand-desc">Calibrated 18mm &amp; 12mm densified phenolic film-faced shuttering plywood
+                  engineered for 30+ repetitions.</p>
+              </div>
+            </div>
+
+            <!-- Brand 3: COMMANDO™ -->
+            <div class="client-brand-box brand-commando">
+              <div class="client-brand-logo-wrap">
+                <img decoding="async" loading="lazy" src="assets/images/commando-logo-transparent.png"
+                  alt="COMMANDO™ Heavy Duty Shuttering Plywood Logo" class="client-logo-img">
+              </div>
+              <div class="client-brand-info">
+                <span class="brand-sub-badge">Heavy-Duty Brand</span>
+                <h5 class="brand-name">COMMANDO™ Formwork</h5>
+                <p class="brand-desc">Heavy-duty column boxes, bridge staging, and ultra-dense zero-void hardwood core
+                  formwork plywood.</p>
+              </div>
             </div>
           </div>
 
-          <!-- Brand 3: COMMANDO™ -->
-          <div class="client-brand-box brand-commando">
-            <div class="client-brand-logo-wrap">
-              <img src="assets/images/commando-logo-transparent.png" alt="COMMANDO™ Heavy Duty Shuttering Plywood Logo" class="client-logo-img">
+          <!-- Combined Triple-Brand Hallmark Banner -->
+          <div class="portfolio-triple-banner">
+            <div class="triple-banner-left">
+              <img decoding="async" loading="lazy" src="assets/images/triple-brand-badge-plaque.png" alt="Shashwat, WudPlus, Commando Official Marks"
+                class="triple-banner-img">
             </div>
-            <div class="client-brand-info">
-              <span class="brand-sub-badge">Heavy-Duty Brand</span>
-              <h5 class="brand-name">COMMANDO™ Formwork</h5>
-              <p class="brand-desc">Heavy-duty column boxes, bridge staging, and ultra-dense zero-void hardwood core formwork plywood.</p>
+            <div class="triple-banner-right">
+              <strong>Direct Seaport Buffer &bull; Kandla &amp; Mundra</strong>
+              <p>All 3 genuine client company brands supplied with mill test certificates, IS:4990 verification, and
+                priority same-day trailer dispatch.</p>
             </div>
           </div>
-        </div>
 
-        <!-- Combined Triple-Brand Hallmark Banner -->
-        <div class="portfolio-triple-banner">
-          <div class="triple-banner-left">
-            <img src="assets/images/triple-brand-badge-plaque.png" alt="Shashwat, WudPlus, Commando Official Marks" class="triple-banner-img">
+          <!-- Corporate Trust & Compliance Badges -->
+          <div class="portfolio-trust-badges">
+            <span class="portfolio-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              IS:4990 BIS Formwork Certified
+            </span>
+            <span class="portfolio-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              FSC &bull; 100% Sustainable Conifers
+            </span>
+            <span class="portfolio-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Kandla Timber Association Member
+            </span>
+            <span class="portfolio-trust-item">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5">
+                <polyline points="20 6 9 17 4 12" />
+              </svg>
+              Zero Core-Void Calibrated Guarantee
+            </span>
           </div>
-          <div class="triple-banner-right">
-            <strong>Direct Seaport Buffer &bull; Kandla &amp; Mundra</strong>
-            <p>All 3 genuine client company brands supplied with mill test certificates, IS:4990 verification, and priority same-day trailer dispatch.</p>
-          </div>
-        </div>
-
-        <!-- Corporate Trust & Compliance Badges -->
-        <div class="portfolio-trust-badges">
-          <span class="portfolio-trust-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            IS:4990 BIS Formwork Certified
-          </span>
-          <span class="portfolio-trust-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            FSC &bull; 100% Sustainable Conifers
-          </span>
-          <span class="portfolio-trust-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Kandla Timber Association Member
-          </span>
-          <span class="portfolio-trust-item">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#16803C" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-            Zero Core-Void Calibrated Guarantee
-          </span>
         </div>
       </div>
-    </div>
 
     </div>
   </section>
@@ -3495,8 +3638,7 @@
         <!-- Brand Summary (Official Client Identity) -->
         <div class="footer-brand-col">
           <a href="#home" class="footer-brand-logo-link" title="Shashwat Ashapura Woods (SAW)">
-            <img src="assets/images/saw-logo-hd.svg" alt="Shashwat Ashapura Woods (SAW)"
-              class="footer-brand-logo-img">
+            <img decoding="async" loading="lazy" src="assets/images/saw-logo-hd.svg" alt="Shashwat Ashapura Woods (SAW)" class="footer-brand-logo-img">
           </a>
           <div class="footer-brand-motto-tag">
             <span>॥ नीति शतकम् ॥</span>
@@ -3601,7 +3743,8 @@
        ========================================================================== -->
   <div class="modal-overlay" id="quoteModal">
     <div class="modal-dialog">
-      <button class="modal-close-btn" id="quoteModalClose" aria-label="Close dialog" onclick="window.sawCloseQuoteModal(event)">&times;</button>
+      <button class="modal-close-btn" id="quoteModalClose" aria-label="Close dialog"
+        onclick="window.sawCloseQuoteModal(event)">&times;</button>
       <span class="section-label">Direct Quotation</span>
       <h3
         style="font-family: var(--font-serif); font-size: 2.2rem; color: var(--color-charcoal); margin-bottom: 0.4rem;">
@@ -3668,9 +3811,10 @@
        ========================================================================== -->
   <div class="modal-overlay" id="speciesModal">
     <div class="modal-dialog" style="max-width: 760px;">
-      <button class="modal-close-btn" id="speciesModalClose" aria-label="Close dialog" onclick="window.sawCloseSpeciesModal(event)">&times;</button>
+      <button class="modal-close-btn" id="speciesModalClose" aria-label="Close dialog"
+        onclick="window.sawCloseSpeciesModal(event)">&times;</button>
       <div style="display: flex; gap: 2rem; flex-wrap: wrap; align-items: flex-start; margin-bottom: 1.8rem;">
-        <img id="speciesModalImg" src="assets/images/species-uruguay.jpg" alt="Species specimen"
+        <img decoding="async" loading="lazy" id="speciesModalImg" src="assets/images/species-uruguay.jpg" alt="Species specimen"
           style="width: 180px; height: 180px; object-fit: cover; border-radius: var(--radius-md); box-shadow: var(--shadow-md);">
         <div style="flex: 1; min-width: 240px;">
           <span class="section-label" id="speciesModalOrigin">South America</span>
@@ -3730,17 +3874,21 @@
   <div class="lightbox-overlay" id="lightboxOverlay">
     <div class="lightbox-content-box">
       <button class="modal-close-btn" id="lightboxClose"
-        style="top: -45px; right: 0; background: rgba(255,255,255,0.2); color: white;" onclick="window.sawCloseLightbox(event)">&times;</button>
-      <button class="lightbox-btn-prev" id="lightboxPrev" aria-label="Previous image" onclick="window.sawPrevLightbox(event)">&#10094;</button>
-      <img src="assets/images/hero-plywood.jpg" alt="Enlarged gallery view" class="lightbox-img" id="lightboxImg">
+        style="top: -45px; right: 0; background: rgba(255,255,255,0.2); color: white;"
+        onclick="window.sawCloseLightbox(event)">&times;</button>
+      <button class="lightbox-btn-prev" id="lightboxPrev" aria-label="Previous image"
+        onclick="window.sawPrevLightbox(event)">&#10094;</button>
+      <img decoding="async" loading="lazy" src="assets/images/hero-plywood.jpg" alt="Enlarged gallery view" class="lightbox-img" id="lightboxImg">
       <div class="lightbox-caption" id="lightboxCaption">Photo Caption</div>
-      <button class="lightbox-btn-next" id="lightboxNext" aria-label="Next image" onclick="window.sawNextLightbox(event)">&#10095;</button>
+      <button class="lightbox-btn-next" id="lightboxNext" aria-label="Next image"
+        onclick="window.sawNextLightbox(event)">&#10095;</button>
     </div>
   </div>
 
   <!-- Floating Back to Top Button -->
   <div class="floating-actions">
-    <button class="floating-btn floating-btn-top" id="backToTopBtn" title="Back to top" onclick="window.sawScrollToTop(event)">
+    <button class="floating-btn floating-btn-top" id="backToTopBtn" title="Back to top"
+      onclick="window.sawScrollToTop(event)">
       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
         <polyline points="18 15 12 9 6 15" />
       </svg>
