@@ -881,12 +881,13 @@ function initSawApp() {
     const originalText = submitBtn ? submitBtn.innerHTML : 'Submitting...';
 
     if (submitBtn) {
-      submitBtn.innerHTML = '<span>Forwarding to WhatsApp...</span>';
+      submitBtn.innerHTML = '<span>Opening Client WhatsApp...</span>';
       submitBtn.disabled = true;
     }
 
     let waText = '';
     const salesDeskNumber = '919099514179';
+    const purchaseDeskNumber = '919714495348';
     const targetDeskNumber = salesDeskNumber;
 
     if (formType === 'quote') {
@@ -898,18 +899,17 @@ function initSawApp() {
       const requirements = document.getElementById('quoteRequirements')?.value.trim() || 'Direct Project Pricing Request';
 
       waText =
-        `🌲 *NEW PROJECT QUOTE INQUIRY* 🌲
-*Shashwat Ashapura Woods*
-━━━━━━━━━━━━━━━━━━━━━━
-👤 *Contact Person:* ${name}
-🏢 *Company / Firm:* ${company}
-📞 *Phone / WhatsApp:* ${phone}
-✉️ *Email Address:* ${email}
-🪵 *Product Interested:* ${product}
-📋 *Quantity & Specifications:*
-${requirements}
-━━━━━━━━━━━━━━━━━━━━━━
-🌐 *Source: Website Instant Quote Form*`;
+        `🌲 *SHASHWAT ASHAPURA WOODS — PROJECT QUOTE REQUEST* 🌲\n` +
+        `━━━━━━━━━━━━━━━━━━━━━━\n` +
+        `👤 *Full Name:* ${name}\n` +
+        `📞 *Phone / WhatsApp:* ${phone}\n` +
+        `✉️ *Email Address:* ${email}\n` +
+        `🏢 *Organization / Firm:* ${company}\n` +
+        `🪵 *Product Required:* ${product}\n` +
+        `📋 *Quantity & Specifications:*\n${requirements}\n` +
+        `━━━━━━━━━━━━━━━━━━━━━━\n` +
+        `📍 *Gandhidham Hub • Mill-Direct Port Pricing*\n` +
+        `🌐 *Source: shashwatashapurawoods.com Quote Modal*`;
 
     } else if (formType === 'enquiry') {
       const name = document.getElementById('contactName')?.value.trim() || 'Valued Client';
@@ -921,42 +921,57 @@ ${requirements}
       const message = document.getElementById('contactMessage')?.value.trim() || 'Please share product rates and delivery schedule.';
 
       waText =
-        `🌲 *NEW TIMBER SUPPLY ENQUIRY* 🌲
-*Shashwat Ashapura Woods*
-━━━━━━━━━━━━━━━━━━━━━━
-👤 *Client Name:* ${name}
-🏢 *Company:* ${company}
-📞 *Phone:* ${phone}
-✉️ *Email:* ${email}
-🪵 *Product:* ${product}
-📦 *Est. Quantity / Size:* ${qty}
-📝 *Requirements:*
-${message}
-━━━━━━━━━━━━━━━━━━━━━━
-🌐 *Source: Website Contact Form*`;
+        `🌲 *SHASHWAT ASHAPURA WOODS — TIMBER SUPPLY ENQUIRY* 🌲\n` +
+        `━━━━━━━━━━━━━━━━━━━━━━\n` +
+        `👤 *Full Name:* ${name}\n` +
+        `📞 *Phone Number:* ${phone}\n` +
+        `✉️ *Email Address:* ${email}\n` +
+        `🏢 *Company / Business:* ${company}\n` +
+        `🪵 *Product Interested:* ${product}\n` +
+        `📦 *Est. Quantity / Size:* ${qty}\n` +
+        `📝 *Project Message & Requirements:*\n${message}\n` +
+        `━━━━━━━━━━━━━━━━━━━━━━\n` +
+        `📍 *Gandhidham Timber Zone • Gujarat*\n` +
+        `🌐 *Source: shashwatashapurawoods.com Contact Desk*`;
+    }
+
+    if (waText) {
+      const waUrl = `https://wa.me/${targetDeskNumber}?text=${encodeURIComponent(waText)}`;
+      const purchaseWaUrl = `https://wa.me/${purchaseDeskNumber}?text=${encodeURIComponent(waText)}`;
+
+      // Update success card links for guaranteed delivery
+      const successCard = document.getElementById(formType === 'quote' ? 'quoteModalSuccessCard' : 'mainEnquirySuccessCard');
+      const waBtn = document.getElementById(formType === 'quote' ? 'quoteModalWaBtn' : 'mainEnquiryWaBtn');
+      const purchaseBtn = document.getElementById(formType === 'quote' ? 'quoteModalPurchaseWaBtn' : 'mainEnquiryPurchaseWaBtn');
+      
+      if (waBtn) waBtn.href = waUrl;
+      if (purchaseBtn) purchaseBtn.href = purchaseWaUrl;
+      if (successCard) successCard.style.display = 'block';
+
+      // Launch WhatsApp synchronously to prevent mobile popup blockers
+      try {
+        const win = window.open(waUrl, '_blank');
+        if (!win || win.closed || typeof win.closed === 'undefined') {
+          // If popup blocked or on compact mobile, redirect current window
+          window.location.href = waUrl;
+        }
+      } catch (err) {
+        window.location.href = waUrl;
+      }
+
+      window.sawShowToast(formType === 'quote' ? 'Quote details formatted! Redirecting to client WhatsApp desk...' : 'Enquiry formatted! Connecting to client WhatsApp desk...');
     }
 
     setTimeout(() => {
-      if (waText) {
-        const waUrl = `https://wa.me/${targetDeskNumber}?text=${encodeURIComponent(waText)}`;
-        window.open(waUrl, '_blank');
-      }
-
-      form.reset();
       if (submitBtn) {
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
       }
-
-      if (formType === 'quote') {
-        window.sawCloseQuoteModal();
-        window.sawShowToast('Quote details submitted! WhatsApp chat has opened with our sales desk.');
-      } else if (formType === 'enquiry') {
-        window.sawShowToast('Enquiry details forwarded! WhatsApp chat has opened with our sales desk.');
-      } else if (formType === 'newsletter') {
+      if (formType === 'newsletter') {
         window.sawShowToast('Subscribed! Thank you for requesting our wood catalog and supply updates.');
+        form.reset();
       }
-    }, 700);
+    }, 1200);
   }
 
   mainEnquiryForm?.addEventListener('submit', (e) => handleFormSubmit(e, 'enquiry'));

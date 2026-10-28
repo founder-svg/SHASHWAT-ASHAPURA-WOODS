@@ -48,8 +48,13 @@
   <link rel="icon" type="image/png" href="assets/images/saw-logo-badge.png">
   <link rel="apple-touch-icon" href="assets/images/saw-logo-hd.svg">
 
+  <!-- Google Fonts Preconnect & High-Speed Parallel Loading -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=saw-clean-nav-v3.2">
+  <link rel="stylesheet" href="assets/css/style.css?v=saw-clean-nav-v3.3">
 
   <!-- JSON-LD Structured Data: LocalBusiness, WholesaleStore & Manufacturer -->
   <script type="application/ld+json">
@@ -593,7 +598,7 @@
             bridges, flyovers, airport terminals, and smart cities.
           </p>
           <div class="hero-actions">
-            <a href="#standards" class="btn btn-primary">
+            <a href="#quality" class="btn btn-primary">
               <span>View Quality Standards</span>
               <span class="arrow-icon">&rarr;</span>
             </a>
@@ -625,7 +630,7 @@
             trailer dispatches to sites across 18+ states.
           </p>
           <div class="hero-actions">
-            <a href="#network" class="btn btn-primary">
+            <a href="#gandhidham-hub" class="btn btn-primary">
               <span>Our Supply Network</span>
               <span class="arrow-icon">&rarr;</span>
             </a>
@@ -2239,7 +2244,7 @@
   <!-- ==========================================================================
        INTERACTIVE TOOL: PLYWOOD & PINEWOOD MATERIAL CALCULATOR
        ========================================================================== -->
-  <section class="section calculator-section">
+  <section class="section calculator-section" id="calculator">
     <div class="container">
       <div class="section-header-centered">
         <span class="section-label light">Jobsite Planning Tool</span>
@@ -3502,11 +3507,25 @@
                 placeholder="Specify site location, expected delivery date, custom cross-sections, or project details..."></textarea>
             </div>
 
-            <div class="form-group full">
-              <button type="submit" class="btn btn-primary" id="mainEnquirySubmit" style="width: 100%;">
-                <span>Send Enquiry</span>
-                <span class="arrow-icon">&rarr;</span>
+            <div class="form-group full" id="mainEnquirySubmitWrap">
+              <button type="submit" class="btn btn-primary" id="mainEnquirySubmit"
+                style="width: 100%; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-color: #25D366; color: #fff; font-weight: 700; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31"/></svg>
+                <span>Send Enquiry to WhatsApp (+91 90995 14179)</span>
               </button>
+              <p style="font-size: 0.78rem; color: var(--color-charcoal-muted); text-align: center; margin-top: 8px;">
+                ⚡ Fast response guaranteed from Gandhidham sales &amp; technical desk.
+              </p>
+            </div>
+            <div class="form-group full" id="mainEnquirySuccessCard" style="display: none; background: rgba(37,211,102,0.1); border: 1.5px solid #25D366; border-radius: 12px; padding: 1.25rem; text-align: center;">
+              <div style="font-size: 1.1rem; font-weight: 700; color: #075E54; margin-bottom: 0.35rem;">✅ Enquiry Ready For WhatsApp!</div>
+              <p style="font-size: 0.85rem; color: var(--color-charcoal); margin-bottom: 0.85rem;">Click below if WhatsApp did not launch automatically:</p>
+              <a id="mainEnquiryWaBtn" href="https://wa.me/919099514179" target="_blank" class="btn" style="background: #25D366; color: #fff; width: 100%; font-weight: 700; margin-bottom: 0.5rem; text-align: center;">
+                <span>Open Sales Desk WhatsApp (+91 90995 14179)</span>
+              </a>
+              <a id="mainEnquiryPurchaseWaBtn" href="https://wa.me/919714495348" target="_blank" class="btn" style="background: rgba(198, 146, 85, 0.2); border: 1px solid var(--color-wood-brown); color: var(--color-charcoal); width: 100%; font-size: 0.82rem; font-weight: 600; text-align: center;">
+                <span>Purchase &amp; Mill Desk (+91 97144 95348)</span>
+              </a>
             </div>
           </div>
         </form>
@@ -3977,20 +3996,20 @@
       <form id="quoteModalForm">
         <div class="enquiry-form-grid">
           <div class="form-group">
-            <label class="form-label" for="quoteName">Contact Person *</label>
-            <input type="text" class="form-control" id="quoteName" required placeholder="e.g. Amit Patel">
+            <label class="form-label" for="quoteName">Full Name *</label>
+            <input type="text" class="form-control" id="quoteName" required placeholder="e.g. Amit Patel" autocomplete="name">
           </div>
           <div class="form-group">
             <label class="form-label" for="quoteCompany">Organization / Firm</label>
-            <input type="text" class="form-control" id="quoteCompany" placeholder="e.g. BuildTech Contractors">
+            <input type="text" class="form-control" id="quoteCompany" placeholder="e.g. BuildTech Contractors" autocomplete="organization">
           </div>
           <div class="form-group">
-            <label class="form-label" for="quotePhone">Phone / WhatsApp *</label>
-            <input type="tel" class="form-control" id="quotePhone" required placeholder="+91 90995 14179">
+            <label class="form-label" for="quotePhone">Phone / WhatsApp Number *</label>
+            <input type="tel" class="form-control" id="quotePhone" required placeholder="+91 90995 14179" autocomplete="tel">
           </div>
           <div class="form-group">
             <label class="form-label" for="quoteEmail">Email Address *</label>
-            <input type="email" class="form-control" id="quoteEmail" required placeholder="name@domain.com">
+            <input type="email" class="form-control" id="quoteEmail" required placeholder="name@domain.com" autocomplete="email">
           </div>
           <div class="form-group full">
             <label class="form-label" for="quoteModalProduct">Product Of Interest *</label>
@@ -4014,11 +4033,25 @@
             <textarea class="form-control" id="quoteRequirements" rows="3" required
               placeholder="e.g. 800 sheets of 18mm Shutter Plywood, delivery to Ahmedabad construction site..."></textarea>
           </div>
-          <div class="form-group full">
-            <button type="submit" class="btn btn-primary" id="quoteModalSubmit" style="width: 100%;">
-              <span>Submit Quote Request</span>
-              <span class="arrow-icon">&rarr;</span>
+          <div class="form-group full" id="quoteModalSubmitWrap">
+            <button type="submit" class="btn btn-primary" id="quoteModalSubmit"
+              style="width: 100%; background: linear-gradient(135deg, #25D366 0%, #128C7E 100%); border-color: #25D366; color: #fff; font-weight: 700; box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" style="margin-right: 8px;"><path d="M12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.816 9.816 0 0 0 12.04 2m.01 1.67c2.2 0 4.26.86 5.82 2.42a8.225 8.225 0 0 1 2.41 5.83c0 4.54-3.7 8.24-8.24 8.24-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.196 8.196 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24m4.52 11.66c-.25-.13-1.47-.72-1.7-.81-.23-.08-.39-.13-.56.13-.17.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.13-1.06-.39-2.03-1.25-.75-.67-1.26-1.5-1.41-1.75-.15-.25-.02-.39.11-.51.11-.11.25-.29.37-.44.13-.15.17-.25.25-.42.08-.17.04-.31-.02-.44-.06-.13-.56-1.34-.76-1.84-.2-.49-.4-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.88.86-.88 2.1 0 1.24.9 2.44 1.03 2.61.13.17 1.77 2.7 4.29 3.79.6.26 1.07.41 1.44.53.61.19 1.16.17 1.6.1.49-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.15-1.18-.07-.12-.23-.19-.48-.31"/></svg>
+              <span>Submit &amp; Open Client WhatsApp</span>
             </button>
+            <p style="font-size: 0.78rem; color: var(--color-charcoal-muted); text-align: center; margin-top: 8px;">
+              ⚡ Submits directly to client WhatsApp for live mill-direct pricing &amp; container quotes.
+            </p>
+          </div>
+          <div class="form-group full" id="quoteModalSuccessCard" style="display: none; background: rgba(37,211,102,0.1); border: 1.5px solid #25D366; border-radius: 12px; padding: 1.25rem; text-align: center;">
+            <div style="font-size: 1.1rem; font-weight: 700; color: #075E54; margin-bottom: 0.35rem;">✅ Quote Ready For WhatsApp Dispatch!</div>
+            <p style="font-size: 0.85rem; color: var(--color-charcoal); margin-bottom: 0.85rem;">Click below if WhatsApp did not open automatically:</p>
+            <a id="quoteModalWaBtn" href="https://wa.me/919099514179" target="_blank" class="btn" style="background: #25D366; color: #fff; width: 100%; font-weight: 700; margin-bottom: 0.5rem; text-align: center;">
+              <span>Open Sales Desk WhatsApp (+91 90995 14179)</span>
+            </a>
+            <a id="quoteModalPurchaseWaBtn" href="https://wa.me/919714495348" target="_blank" class="btn" style="background: rgba(198, 146, 85, 0.2); border: 1px solid var(--color-wood-brown); color: var(--color-charcoal); width: 100%; font-size: 0.82rem; font-weight: 600; text-align: center;">
+              <span>Purchase &amp; Mill Desk (+91 97144 95348)</span>
+            </a>
           </div>
         </div>
       </form>
