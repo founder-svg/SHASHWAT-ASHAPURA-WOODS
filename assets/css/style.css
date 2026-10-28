@@ -73,6 +73,10 @@ html {
   scroll-padding-top: 90px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
+  position: relative;
 }
 
 body {
@@ -80,8 +84,17 @@ body {
   background-color: var(--color-cream-bg);
   color: var(--color-charcoal);
   line-height: 1.65;
-  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
   position: relative;
+}
+
+@supports not (overflow-x: clip) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
 }
 
 /* Custom Scrollbar */
@@ -103,8 +116,18 @@ body {
   background: var(--color-wood-brown);
 }
 
-img {
+img,
+picture,
+video,
+canvas,
+svg,
+table,
+iframe {
   max-width: 100%;
+  box-sizing: border-box;
+}
+
+img {
   height: auto;
   display: block;
 }
@@ -4515,18 +4538,28 @@ textarea.form-control {
   }
 }
 
-/* Mobile: 320px – 767px */
-@media (max-width: 767px) {
+/* Mobile: 320px – 768px */
+@media (max-width: 768px) {
+  :root {
+    --container-padding: 1.15rem;
+  }
+
+  .container {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
   .brand-logo-img {
     height: 40px;
   }
 
   .brand-name {
-    font-size: 0.96rem;
+    font-size: 0.92rem;
   }
 
   .brand-tagline {
-    font-size: 0.56rem;
+    font-size: 0.55rem;
   }
 
   .brand-hallmark-card {
@@ -4544,13 +4577,13 @@ textarea.form-control {
   }
 
   .section {
-    padding-block: 4rem;
+    padding-block: 3.5rem;
   }
 
   .hero-section {
     height: auto;
-    min-height: 580px;
-    padding-block: 5rem 6rem;
+    min-height: 540px;
+    padding-block: 4.5rem 5rem;
   }
 
   .hero-content-wrap {
@@ -4558,31 +4591,32 @@ textarea.form-control {
   }
 
   .hero-heading {
-    font-size: 2.4rem;
+    font-size: clamp(1.55rem, 5.8vw, 2.2rem);
+    line-height: 1.25;
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  .hero-description {
+    font-size: 0.95rem;
+    line-height: 1.6;
   }
 
   .hero-actions {
     flex-direction: column;
     align-items: stretch;
+    width: 100%;
+    gap: 0.75rem;
   }
 
   .hero-actions .btn {
     width: 100%;
+    text-align: center;
   }
 
+  /* Hide floating hero side arrows on mobile touch devices */
   .hero-side-btn {
-    width: 42px;
-    height: 42px;
-    background: rgba(10, 11, 14, 0.88);
-    border-width: 1px;
-  }
-
-  .hero-side-prev {
-    left: 0.5rem;
-  }
-
-  .hero-side-next {
-    right: 0.5rem;
+    display: none !important;
   }
 
   .hero-indicators {
@@ -4621,6 +4655,12 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
+  .calculator-box {
+    grid-template-columns: 1fr;
+    padding: 1.6rem 1.15rem;
+    gap: 2rem;
+  }
+
   .calc-form-grid {
     grid-template-columns: 1fr;
   }
@@ -4629,12 +4669,16 @@ textarea.form-control {
     grid-column: span 1;
   }
 
+  .calc-results-card {
+    padding: 1.6rem 1.15rem;
+  }
+
   .gallery-grid {
     grid-template-columns: 1fr;
   }
 
   .enquiry-form-card {
-    padding: 1.8rem 1.4rem;
+    padding: 1.8rem 1.25rem;
   }
 
   .enquiry-form-grid {
@@ -4656,20 +4700,175 @@ textarea.form-control {
     text-align: center;
   }
 
+  /* Footer Marquee & Background Text containment on mobile */
+  .footer-motion-marquee-wrap {
+    transform: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden !important;
+    margin-bottom: 2.5rem;
+  }
+
+  .footer-giant-bg-text {
+    display: none !important;
+  }
+
+  /* Mobile floating WhatsApp & Call action popups */
+  .wa-floating-container {
+    bottom: 1.25rem !important;
+    right: 1rem !important;
+    gap: 0.5rem;
+  }
+
+  .quick-trigger-tooltip {
+    display: none !important;
+  }
+
+  .saw-action-popcard {
+    position: fixed !important;
+    left: 1rem !important;
+    right: 1rem !important;
+    bottom: 5rem !important;
+    width: auto !important;
+    max-width: calc(100vw - 2rem) !important;
+    transform-origin: bottom center !important;
+  }
+
+  /* Modals on mobile */
+  .modal-dialog {
+    padding: 1.75rem 1.15rem !important;
+    width: calc(100% - 1.5rem) !important;
+    max-width: calc(100% - 1.5rem) !important;
+    margin: 1rem auto !important;
+  }
+
+  /* Cartoon Mascot stage */
+  .mascot-story-container {
+    grid-template-columns: 1fr !important;
+    gap: 1.5rem !important;
+  }
+
+  .facility-images-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .species-modal-stats-grid {
+    grid-template-columns: 1fr !important;
+  }
+
   .floating-actions {
     bottom: 1rem;
     left: 1rem;
   }
 }
 
+/* Compact Smartphones: <= 480px (iPhone, Galaxy, Pixel, etc.) */
 @media (max-width: 480px) {
+  :root {
+    --container-padding: 0.85rem;
+  }
+
   .brand-text {
     display: none;
   }
 
   .brand-logo-img {
-    height: 42px;
-    max-width: 120px;
+    height: 38px;
+    max-width: 85px;
+  }
+
+  #headerQuoteBtn {
+    display: none !important;
+  }
+
+  .site-header {
+    height: 64px;
+  }
+
+  .navbar-inner {
+    height: 64px;
+    gap: 0.5rem;
+  }
+
+  .nav-menu {
+    top: 64px;
+    padding: 1.5rem 1rem;
+  }
+
+  .hero-heading {
+    font-size: clamp(1.4rem, 6.2vw, 1.95rem);
+  }
+
+  .hero-description {
+    font-size: 0.88rem;
+  }
+
+  .hero-badge {
+    font-size: 0.72rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .gallery-filter-tabs {
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .gallery-tab {
+    padding: 0.45rem 0.85rem;
+    font-size: 0.76rem;
+  }
+
+  .enquiry-form-card {
+    padding: 1.4rem 0.9rem;
+  }
+
+  .calculator-box {
+    padding: 1.25rem 0.85rem !important;
+  }
+
+  .calc-results-card {
+    padding: 1.25rem 0.85rem !important;
+  }
+
+  .saw-action-popcard {
+    left: 0.6rem !important;
+    right: 0.6rem !important;
+    max-width: calc(100vw - 1.2rem) !important;
+    bottom: 4.8rem !important;
+  }
+
+  .wa-floating-container {
+    bottom: 1rem !important;
+    right: 0.75rem !important;
+  }
+
+  .hero-actions .btn {
+    padding: 0.85rem 1.25rem;
+    font-size: 0.88rem;
+  }
+}
+
+/* Ultra-compact Phones: <= 360px (iPhone SE 1st gen, small Androids) */
+@media (max-width: 360px) {
+  :root {
+    --container-padding: 0.65rem;
+  }
+
+  .hero-heading {
+    font-size: 1.35rem;
+  }
+
+  .btn {
+    padding: 0.75rem 1rem;
+    font-size: 0.82rem;
+  }
+
+  .saw-popcard-header {
+    padding: 0.75rem 0.85rem;
+  }
+
+  .saw-popcard-body {
+    padding: 0.85rem 0.75rem;
   }
 }
 
