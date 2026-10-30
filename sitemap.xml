@@ -3,17 +3,22 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://www.shashwatashapurawoods.com/</loc>
-    <lastmod>2026-10-29</lastmod>
-    <changefreq>weekly</changefreq>
+    <lastmod>2026-10-31</lastmod>
+    <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://www.shashwatashapurawoods.com/assets/images/site-saw-column-formwork-dusk.jpg</image:loc>
-      <image:title>Pine Wood and Shutter Wood Supplier in Gandhidham - Shashwat Ashapura Woods</image:title>
-      <image:caption>Premium shuttering plywood and imported pinewood timber staging at Gandhidham, Kutch</image:caption>
+      <image:title>#1 Pine Wood &amp; Shutter Wood Supplier in Gandhidham - Shashwat Ashapura Woods</image:title>
+      <image:caption>Imported Pine Wood and Film Faced Shuttering Plywood Supplier in Gandhidham, Kutch (Kandla Port, Gujarat)</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://www.shashwatashapurawoods.com/assets/images/site-structure-slab-deck-laying.jpg</image:loc>
       <image:title>Commando 18 Slab and WudPlus Densified Shuttering Plywood Gandhidham</image:title>
+      <image:caption>High repetition construction shuttering plywood for slab and beam casting</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://www.shashwatashapurawoods.com/assets/images/saw-logo-hd.png</image:loc>
+      <image:title>Shashwat Ashapura Woods Official Logo Gandhidham</image:title>
     </image:image>
   </url>
 </urlset>
