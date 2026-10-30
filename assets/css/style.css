@@ -324,8 +324,6 @@ ol {
   background: rgba(255, 255, 255, 0.08);
   color: var(--color-white);
   border: 1.5px solid rgba(255, 255, 255, 0.4);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
 }
 
 .btn-outline-light:hover {
@@ -402,9 +400,6 @@ ol {
   top: 0;
   z-index: 1000;
   background: rgba(11, 13, 17, 0.95);
-  -webkit-backdrop-filter: blur(16px);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid rgba(212, 160, 23, 0.16);
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -853,8 +848,6 @@ ol {
   gap: 0.65rem;
   background: rgba(245, 240, 231, 0.1);
   border: 1px solid rgba(198, 146, 85, 0.35);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
   padding: 0.45rem 1.1rem;
   border-radius: var(--radius-full);
   font-size: 0.82rem;
@@ -921,9 +914,6 @@ ol {
   border-radius: 50%;
   background: rgba(12, 14, 18, 0.85);
   border: 1.5px solid rgba(198, 146, 85, 0.55);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   color: var(--color-white);
   display: flex;
   align-items: center;
@@ -994,9 +984,6 @@ ol {
   padding: 0.5rem 1.15rem;
   border-radius: var(--radius-full);
   border: 1px solid rgba(198, 146, 85, 0.3);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   pointer-events: auto !important;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
 }
@@ -1076,9 +1063,6 @@ ol {
   align-items: center !important;
   justify-content: center !important;
   transition: all var(--transition-fast);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   cursor: pointer !important;
   pointer-events: auto !important;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35) !important;
@@ -1176,8 +1160,6 @@ ol {
   border-radius: var(--radius-md);
   padding: 0.65rem 1.4rem 0.65rem 0.75rem;
   white-space: nowrap;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
   transition: all var(--transition-smooth);
 }
 
@@ -1300,8 +1282,6 @@ ol {
   align-items: center;
   gap: 10px;
   background: rgba(14, 41, 28, 0.88);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   padding: 6px 14px;
   border-radius: 999px;
   border: 1px solid rgba(198, 146, 85, 0.35);
@@ -1332,8 +1312,6 @@ ol {
   height: 40px;
   border-radius: 50%;
   background: rgba(14, 41, 28, 0.82);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
   color: #ffffff;
   border: 1px solid rgba(255, 255, 255, 0.25);
   display: flex;
@@ -1551,8 +1529,6 @@ ol {
   transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1),
     border-color 0.4s ease;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   position: relative;
 }
 
@@ -1604,8 +1580,6 @@ ol {
   text-transform: uppercase;
   padding: 0.35rem 0.85rem;
   border-radius: var(--radius-full);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
 }
 
 .product-content {
@@ -1763,13 +1737,34 @@ ol {
   height: 220px;
   position: relative;
   overflow: hidden;
+  background-color: #14171d;
+  background-image: linear-gradient(135deg, #101217 0%, #1a1e27 50%, #101217 100%);
+}
+
+.species-card-img-box::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.08) 50%, transparent 100%);
+  background-size: 200% 100%;
+  animation: shimmerCard 1.6s infinite linear;
+  pointer-events: none;
+  z-index: 1;
+}
+
+@keyframes shimmerCard {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
 }
 
 .species-card-img {
+  position: relative;
+  z-index: 2;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
+  display: block;
 }
 
 .species-card:hover .species-card-img {
@@ -1788,8 +1783,9 @@ ol {
   text-transform: uppercase;
   padding: 0.3rem 0.75rem;
   border-radius: var(--radius-full);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  z-index: 3;
 }
 
 .species-card-body {
@@ -2125,8 +2121,6 @@ ol {
   font-weight: 600;
   letter-spacing: 0.05em;
   border: 1px solid rgba(255, 255, 255, 0.2);
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
   white-space: nowrap;
 }
 
@@ -2322,9 +2316,6 @@ ol {
   color: #fff;
   background: rgba(255, 255, 255, 0.12);
   border: 1px solid rgba(212, 160, 23, 0.35);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
   padding: 0.2rem 0.6rem;
   border-radius: 999px;
   white-space: nowrap;
@@ -2379,8 +2370,6 @@ ol {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-lg);
   padding: 3rem;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;
   gap: 3.5rem;
@@ -2556,8 +2545,6 @@ ol {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
   color: var(--color-amber-gold);
 }
 
@@ -3671,8 +3658,6 @@ textarea.form-control {
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  -webkit-backdrop-filter: blur(6px);
-  backdrop-filter: blur(6px);
   transition: all var(--transition-fast);
 }
 
@@ -4432,9 +4417,6 @@ textarea.form-control {
     left: 0;
     right: 0;
     background: rgba(8, 9, 12, 0.98);
-    -webkit-backdrop-filter: blur(20px);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
     flex-direction: column;
     padding: 2.25rem 2rem;
     gap: 1.25rem;
@@ -4944,8 +4926,6 @@ textarea.form-control {
   margin-bottom: 4rem;
   position: relative;
   z-index: 2;
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
 }
 
 .footer-motion-marquee {
@@ -5011,8 +4991,6 @@ textarea.form-control {
   background: linear-gradient(145deg, rgba(18, 20, 25, 0.6) 0%, rgba(10, 11, 14, 0.85) 100%);
   border: 1px solid rgba(198, 146, 85, 0.28);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35), inset 0 1px 1px rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(14px);
-  backdrop-filter: blur(14px);
   padding: 0.85rem 1.8rem;
   border-radius: var(--radius-full);
   color: #FFFFFF;
@@ -5223,8 +5201,6 @@ textarea.form-control {
   align-items: center;
   gap: 0.5rem;
   background: rgba(13, 15, 18, 0.92);
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
   padding: 0.45rem 1rem;
   border-radius: var(--radius-full);
   border: 1px solid rgba(198, 146, 85, 0.4);
@@ -5268,8 +5244,6 @@ textarea.form-control {
   font-size: 0.78rem;
   font-weight: 600;
   letter-spacing: 0.02em;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
 }
 
 .loop-pulse-dot {
@@ -5289,8 +5263,6 @@ textarea.form-control {
 .cinema-sound-btn,
 .cinema-music-btn {
   background: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.3);
   color: #FFFFFF;
   padding: 0.45rem 1.1rem;
@@ -5360,8 +5332,6 @@ textarea.form-control {
   height: 76px;
   border-radius: 50%;
   background: rgba(18, 20, 25, 0.85);
-  -webkit-backdrop-filter: blur(12px);
-  backdrop-filter: blur(12px);
   border: 2px solid var(--color-amber-gold);
   color: #FFFFFF;
   display: flex;
@@ -5631,8 +5601,6 @@ textarea.form-control {
   margin-top: 1.5rem;
   text-align: center;
   background: rgba(255, 255, 255, 0.08);
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
   border: 1px solid rgba(198, 146, 85, 0.25);
   border-radius: var(--radius-md);
   padding: 1rem 0.85rem;
@@ -6132,3 +6100,41 @@ textarea.form-control {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* ==========================================================================
+   HIGH-PERFORMANCE ULTRA-SMOOTH RENDERING & FAST SCROLL ENGINE
+   ========================================================================== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Offscreen Section Rendering Containment: Dramatically accelerates scroll FPS */
+#products,
+#species,
+#plywood,
+#applications,
+#calculator,
+#videos,
+#gallery,
+#faq,
+#whyUs,
+#certifications {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 700px;
+}
+
+/* Hardware acceleration for scroll tracks and carousels */
+.species-track,
+.hero-slider,
+.marquee-track,
+.gallery-grid {
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Instant Image Decode & Crisp Edge Rendering */
+img {
+  image-rendering: auto;
+}

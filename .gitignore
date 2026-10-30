@@ -24,3 +24,7 @@ ehthumbs.db
 # IDE & Editor settings
 .vscode/
 .idea/
+
+# Local backup & office files
+*.docx
+assets/images_backup/

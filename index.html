@@ -53,8 +53,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
+  <!-- High-Speed Image Preloads for Zero-Delay Instant Rendering -->
+  <link rel="preload" as="image" href="assets/images/species-uruguay.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/species-austral.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/species-syp.jpg" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/images/species-nz.jpg">
+  <link rel="preload" as="image" href="assets/images/species-spruce.jpg">
+
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="assets/css/style.css?v=saw-clean-nav-v3.3">
+  <link rel="stylesheet" href="assets/css/style.css?v=saw-perf-v3.4">
 
   <!-- JSON-LD Structured Data: LocalBusiness, WholesaleStore, Manufacturer & Product Catalog -->
   <script type="application/ld+json">
@@ -1757,7 +1764,7 @@
           <!-- Species Card 01: Uruguay Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img decoding="async" loading="lazy" src="assets/images/species-uruguay.jpg" alt="Uruguay Pine Timber" class="species-card-img">
+              <img decoding="async" loading="eager" fetchpriority="high" src="assets/images/species-uruguay.jpg" width="400" height="220" alt="Uruguay Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Uruguay &bull; S. America</span>
             </div>
             <div class="species-card-body">
@@ -1788,7 +1795,7 @@
           <!-- Species Card 02: Austral Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img decoding="async" loading="lazy" src="assets/images/species-austral.jpg" alt="Austral Pine Timber" class="species-card-img">
+              <img decoding="async" loading="eager" fetchpriority="high" src="assets/images/species-austral.jpg" width="400" height="220" alt="Austral Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Southern Hemisphere</span>
             </div>
             <div class="species-card-body">
@@ -1819,7 +1826,7 @@
           <!-- Species Card 03: USA / SYP Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img decoding="async" loading="lazy" src="assets/images/species-syp.jpg" alt="USA SYP Pine Timber" class="species-card-img">
+              <img decoding="async" loading="eager" fetchpriority="high" src="assets/images/species-syp.jpg" width="400" height="220" alt="USA SYP Pine Timber" class="species-card-img">
               <span class="species-origin-badge">United States (SYP)</span>
             </div>
             <div class="species-card-body">
@@ -1849,7 +1856,7 @@
           <!-- Species Card 04: New Zealand Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img decoding="async" loading="lazy" src="assets/images/species-nz.jpg" alt="New Zealand Pine Timber" class="species-card-img">
+              <img decoding="async" loading="eager" fetchpriority="auto" src="assets/images/species-nz.jpg" width="400" height="220" alt="New Zealand Pine Timber" class="species-card-img">
               <span class="species-origin-badge">New Zealand Radiata</span>
             </div>
             <div class="species-card-body">
@@ -1879,7 +1886,7 @@
           <!-- Species Card 05: Spruce Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img decoding="async" loading="lazy" src="assets/images/species-spruce.jpg" alt="Spruce Pine Timber" class="species-card-img">
+              <img decoding="async" loading="eager" fetchpriority="auto" src="assets/images/species-spruce.jpg" width="400" height="220" alt="Spruce Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Nordic / Europe</span>
             </div>
             <div class="species-card-body">
@@ -1910,7 +1917,7 @@
           <!-- Species Card 06: Silk Pine -->
           <div class="species-card">
             <div class="species-card-img-box">
-              <img decoding="async" loading="lazy" src="assets/images/species-silk.jpg" alt="Silk Pine Timber" class="species-card-img">
+              <img decoding="async" loading="eager" fetchpriority="auto" src="assets/images/species-silk.jpg" width="400" height="220" alt="Silk Pine Timber" class="species-card-img">
               <span class="species-origin-badge">Selected Forest Reserves</span>
             </div>
             <div class="species-card-body">
@@ -2746,13 +2753,13 @@
         <div class="cinema-theater-box" id="cinemaTheaterBox">
           <div class="cinema-video-wrap">
             <video id="spotlightVideo" class="cinema-player" src="assets/videos/commando-formwork-site-live.mp4"
-              poster="assets/images/commando-formwork-live-poster.jpg" playsinline preload="auto" muted
+              poster="assets/images/commando-formwork-live-poster.jpg" playsinline preload="none" muted
               onclick="window.sawToggleVideoPlayback()">
               <source src="assets/videos/commando-formwork-site-live.mp4" type="video/mp4">
               <source src="assets/videos/high-rise-construction-skyline.mp4" type="video/mp4">
               Your browser does not support high-definition HTML5 video.
             </video>
-            <audio id="cinemaBgmAudio" src="assets/audio/shashwat-cinematic-theme.mp3" loop preload="auto"></audio>
+            <audio id="cinemaBgmAudio" src="assets/audio/shashwat-cinematic-theme.mp3" loop preload="none"></audio>
             <div class="cinema-overlay-gradient"></div>
 
             <!-- Top bar with live badge, auto-loop status & audio switches -->
